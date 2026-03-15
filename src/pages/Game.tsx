@@ -11,7 +11,7 @@ import {
 } from "@/lib/gameState";
 
 import { TopBar } from "@/components/game/TopBar";
-import { TimerBar } from "@/components/game/TimerBar";
+
 import { EmailCard } from "@/components/game/EmailCard";
 import { ChoiceButtons } from "@/components/game/ChoiceButtons";
 import { ConfidenceSelector } from "@/components/game/ConfidenceSelector";
