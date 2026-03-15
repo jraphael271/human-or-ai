@@ -223,9 +223,6 @@ export default function Game() {
             score={state.score}
             scoreAnimating={scoreAnimating}
           />
-          <div className="px-6 pb-4">
-            <TimerBar progress={progress} timeLeft={timeLeft} />
-          </div>
           <div className="flex-1 space-y-6 overflow-y-auto">
             <EmailCard context={currentEmail.context} text={currentEmail.text} />
             <ChoiceButtons selected={choice} onSelect={setChoice} />
