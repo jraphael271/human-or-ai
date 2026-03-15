@@ -41,20 +41,6 @@ export default function Game() {
     ? emails.find((e) => e.id === state.selectedEmailIds[state.currentRound])
     : null;
 
-  const handleTimerComplete = useCallback(() => {
-    if (choice && confidence) {
-      handleSubmit();
-    } else if (choice) {
-      setConfidence("low");
-      setTimeout(() => handleSubmit(), 0);
-    }
-  }, [choice, confidence]);
-
-  const { timeLeft, progress } = useTimer({
-    duration: TIMER_DURATION,
-    onComplete: handleTimerComplete,
-    active: isPhase1Active,
-  });
 
   function setPhase(phase: GamePhase) {
     setState((prev) => ({ ...prev, phase }));
