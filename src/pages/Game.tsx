@@ -9,9 +9,9 @@ import {
   createInitialState,
   shuffleAndPick,
 } from "@/lib/gameState";
-import { useTimer } from "@/hooks/useTimer";
+
 import { TopBar } from "@/components/game/TopBar";
-import { TimerBar } from "@/components/game/TimerBar";
+
 import { EmailCard } from "@/components/game/EmailCard";
 import { ChoiceButtons } from "@/components/game/ChoiceButtons";
 import { ConfidenceSelector } from "@/components/game/ConfidenceSelector";
@@ -23,7 +23,6 @@ import { Bot, Eye, BookOpen, ArrowRight, Zap, Scale, Search } from "lucide-react
 
 const PHASE1_ROUNDS = 5;
 const PHASE2_SCENARIOS = 3;
-const TIMER_DURATION = 15;
 
 export default function Game() {
   const [state, setState] = useState<GameState>(() => {
@@ -42,20 +41,6 @@ export default function Game() {
     ? emails.find((e) => e.id === state.selectedEmailIds[state.currentRound])
     : null;
 
-  const handleTimerComplete = useCallback(() => {
-    if (choice && confidence) {
-      handleSubmit();
-    } else if (choice) {
-      setConfidence("low");
-      setTimeout(() => handleSubmit(), 0);
-    }
-  }, [choice, confidence]);
-
-  const { timeLeft, progress } = useTimer({
-    duration: TIMER_DURATION,
-    onComplete: handleTimerComplete,
-    active: isPhase1Active,
-  });
 
   function setPhase(phase: GamePhase) {
     setState((prev) => ({ ...prev, phase }));
@@ -238,9 +223,6 @@ export default function Game() {
             score={state.score}
             scoreAnimating={scoreAnimating}
           />
-          <div className="px-6 pb-4">
-            <TimerBar progress={progress} timeLeft={timeLeft} />
-          </div>
           <div className="flex-1 space-y-6 overflow-y-auto">
             <EmailCard context={currentEmail.context} text={currentEmail.text} />
             <ChoiceButtons selected={choice} onSelect={setChoice} />
