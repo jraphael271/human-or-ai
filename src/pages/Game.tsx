@@ -9,7 +9,7 @@ import {
   createInitialState,
   shuffleAndPick,
 } from "@/lib/gameState";
-import { useTimer } from "@/hooks/useTimer";
+
 import { TopBar } from "@/components/game/TopBar";
 import { TimerBar } from "@/components/game/TimerBar";
 import { EmailCard } from "@/components/game/EmailCard";
