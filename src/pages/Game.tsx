@@ -23,7 +23,6 @@ import { Bot, Eye, BookOpen, ArrowRight, Zap, Scale, Search } from "lucide-react
 
 const PHASE1_ROUNDS = 5;
 const PHASE2_SCENARIOS = 3;
-const TIMER_DURATION = 15;
 
 export default function Game() {
   const [state, setState] = useState<GameState>(() => {
