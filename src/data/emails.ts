@@ -52,7 +52,7 @@ Alex Rivera, Teaching Assistant`,
 
 Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
 
-– Marcus`,
+- Marcus`,
     label: "Human",
     explanation: "Casual tone, direct references to specific details, @-mentions, and natural conversational flow indicate genuine human writing.",
   },
