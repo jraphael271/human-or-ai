@@ -25,7 +25,7 @@ export const scenarios: Scenario[] = [
   {
     id: 1,
     title: "The Suspicious Essay",
-    description: "Professor Martinez notices that a typically average student, Alex, has submitted an exceptionally well-written research paper. The writing style seems different from Alex's previous work — more polished, more structured, with sophisticated vocabulary. However, Alex has been attending extra tutoring sessions this semester.",
+    description: "Professor Martinez notices that a typically average student, Alex, has submitted an exceptionally well-written research paper. The writing style seems different from Alex's previous work - more polished, more structured, with sophisticated vocabulary. However, Alex has been attending extra tutoring sessions this semester.",
     excerpt: `"The implications of quantum computing on modern cryptographic systems represent a paradigm shift in our understanding of digital security. As Shor's algorithm demonstrates, the computational complexity assumptions underlying RSA encryption become fundamentally untenable in a post-quantum landscape..."`,
     options: [
       { id: "flag", label: "Flag as AI-generated", description: "Report the student for academic misconduct" },
@@ -59,7 +59,7 @@ export const scenarios: Scenario[] = [
   {
     id: 2,
     title: "The AI Cover Letter",
-    description: "A university career counselor reviews applications for a competitive internship program. One candidate, Sam, submitted a cover letter that's remarkably well-crafted — professional tone, perfect structure, zero errors. The counselor suspects AI assistance but has no proof. Sam comes from a disadvantaged background and English is their second language.",
+    description: "A university career counselor reviews applications for a competitive internship program. One candidate, Sam, submitted a cover letter that's remarkably well-crafted - professional tone, perfect structure, zero errors. The counselor suspects AI assistance but has no proof. Sam comes from a disadvantaged background and English is their second language.",
     excerpt: `"I am uniquely positioned to contribute to your organization's mission of advancing sustainable technology solutions. My interdisciplinary background in environmental science and data analytics, combined with my passion for evidence-based policy making, enables me to bridge the gap between technical research and practical implementation..."`,
     options: [
       { id: "reject", label: "Reject the application", description: "Disqualify for suspected AI use" },

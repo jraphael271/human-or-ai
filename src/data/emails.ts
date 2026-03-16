@@ -16,7 +16,7 @@ export const emails: Email[] = [
 
 I hope this email finds you well. I'm writing to request a short extension on the research paper due this Friday. I've been dealing with some personal issues this week that have made it difficult to focus, and I want to make sure I submit work that meets the standard you expect.
 
-Would it be possible to have until Monday? I already have a solid outline and most of my sources gathered — I just need a couple more days to pull it all together properly.
+Would it be possible to have until Monday? I already have a solid outline and most of my sources gathered - I just need a couple more days to pull it all together properly.
 
 Thank you for your understanding.
 
@@ -30,7 +30,7 @@ Jamie`,
     context: "Teaching assistant announcing office hours change",
     text: `Dear Students,
 
-I am writing to inform you that my office hours for the remainder of this semester will be adjusted. Effective immediately, my office hours will transition from Tuesdays and Thursdays, 2:00 PM – 4:00 PM, to Mondays and Wednesdays, 3:00 PM – 5:00 PM.
+I am writing to inform you that my office hours for the remainder of this semester will be adjusted. Effective immediately, my office hours will transition from Tuesdays and Thursdays, 2:00 PM - 4:00 PM, to Mondays and Wednesdays, 3:00 PM - 5:00 PM.
 
 This change is being implemented to better accommodate the schedules of the majority of students enrolled in the course. Should you require assistance outside of these newly established hours, please do not hesitate to reach out via email to schedule an individual appointment.
 
@@ -46,13 +46,13 @@ Alex Rivera, Teaching Assistant`,
     context: "Student responding to a group project message",
     text: `Hey everyone,
 
-So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section — nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
+    So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
 
-@Sarah — can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
+    @Sarah - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
 
 Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
 
-– Marcus`,
+- Marcus`,
     label: "Human",
     explanation: "Casual tone, direct references to specific details, @-mentions, and natural conversational flow indicate genuine human writing.",
   },
@@ -81,7 +81,7 @@ Dr. Williams`,
     context: "Student complaint email to university administration",
     text: `To whom it may concern,
 
-I'm writing because I've had a really frustrating experience with the financial aid office this semester. I submitted my FAFSA back in February and was told my package would be ready by April. It's now May and I still haven't received anything concrete — just vague emails saying it's "being processed."
+I'm writing because I've had a really frustrating experience with the financial aid office this semester. I submitted my FAFSA back in February and was told my package would be ready by April. It's now May and I still haven't received anything concrete - just vague emails saying it's "being processed."
 
 I've called three times and visited in person twice. Each time I get a different answer. Meanwhile, my tuition payment deadline is in two weeks and I genuinely don't know how I'm supposed to pay.
 
@@ -115,7 +115,7 @@ Academic Advisor, Department of Computer Science`,
     context: "Student emailing about a missed exam",
     text: `Professor Nakamura,
 
-I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off — I think my phone died overnight because I forgot to plug it in.
+I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off - I think my phone died overnight because I forgot to plug it in.
 
 I completely understand if there's nothing you can do about this, and I take full responsibility. But if there's any possibility of a makeup exam or alternative assessment, I would be incredibly grateful. I've attended every class this semester and my assignment grades reflect that I've been keeping up with the material.
 
@@ -137,7 +137,7 @@ We are pleased to announce an upcoming guest lecture that promises to be both en
 
 Event Details:
 - Date: Thursday, November 14, 2024
-- Time: 4:00 PM – 5:30 PM
+- Time: 4:00 PM - 5:30 PM
 - Location: Harrison Auditorium, Room 201
 - Reception to follow in the Faculty Lounge
 
@@ -157,11 +157,11 @@ The Department of Philosophy and Ethics`,
     context: "Peer tutor reaching out to a student",
     text: `Hey!
 
-I'm your assigned peer tutor for CHEM 201 this semester. My name's Diego and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry — honestly same, orgo almost broke me last year lol.
+    I'm your assigned peer tutor for CHEM 201 this semester. My name's Diego and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
 
-I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
+    I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
 
-Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment — everyone struggles with chair conformations at first 😅
+    Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
 
 Looking forward to working with you!
 Diego`,
