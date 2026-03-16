@@ -37,10 +37,7 @@ export default function Game() {
   const [currentScenarioIndex, setCurrentScenarioIndex] = useState(0);
 
   const isPhase1Active = state.phase === "phase1";
-  const currentEmail = isPhase1Active
-    ? emails.find((e) => e.id === state.selectedEmailIds[state.currentRound])
-    : null;
-
+  const currentEmail = isPhase1Active ? emails.find((e) => e.id === state.selectedEmailIds[state.currentRound]) : null;
 
   function setPhase(phase: GamePhase) {
     setState((prev) => ({ ...prev, phase }));
@@ -169,9 +166,24 @@ export default function Game() {
 
             <div className="space-y-4">
               {[
-                { icon: <Eye className="w-6 h-6" />, step: "Step 1", title: "Read the email", desc: "You'll see a university-related email — from students, professors, or staff." },
-                { icon: <Search className="w-6 h-6" />, step: "Step 2", title: "Classify the author", desc: "Decide: was it written by a Human, AI, or Edited by AI?" },
-                { icon: <Zap className="w-6 h-6" />, step: "Step 3", title: "Bet your confidence", desc: "Risk more points for bigger rewards — or play it safe." },
+                {
+                  icon: <Eye className="w-6 h-6" />,
+                  step: "Step 1",
+                  title: "Read the email",
+                  desc: "You'll see a university-related email from students, professors, or staff.",
+                },
+                {
+                  icon: <Search className="w-6 h-6" />,
+                  step: "Step 2",
+                  title: "Classify the author",
+                  desc: "Decide: was it written by a Human, AI, or Edited by AI?",
+                },
+                {
+                  icon: <Zap className="w-6 h-6" />,
+                  step: "Step 3",
+                  title: "Bet your confidence",
+                  desc: "Risk more points for bigger rewards or play it safe.",
+                },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -193,7 +205,8 @@ export default function Game() {
                 <div>
                   <h3 className="font-semibold text-warning">Phase 2: Ethical Consequences</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    After the detection rounds, you'll face scenarios where misidentifying AI use has real consequences. Your decisions will be tested.
+                    After the detection rounds, you'll face scenarios where misidentifying AI use has real consequences.
+                    Your decisions will be tested.
                   </p>
                 </div>
               </div>
@@ -265,7 +278,8 @@ export default function Game() {
               You just experienced how difficult it is to detect AI writing.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Now imagine making decisions where <span className="text-warning font-medium">accusations have real consequences</span>.
+              Now imagine making decisions where{" "}
+              <span className="text-warning font-medium">accusations have real consequences</span>.
             </p>
             <button
               onClick={() => {
