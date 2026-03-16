@@ -115,7 +115,7 @@ Academic Advisor, Department of Computer Science`,
     context: "Student emailing about a missed exam",
     text: `Professor Nakamura,
 
-I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off — I think my phone died overnight because I forgot to plug it in.
+I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off - I think my phone died overnight because I forgot to plug it in.
 
 I completely understand if there's nothing you can do about this, and I take full responsibility. But if there's any possibility of a makeup exam or alternative assessment, I would be incredibly grateful. I've attended every class this semester and my assignment grades reflect that I've been keeping up with the material.
 
