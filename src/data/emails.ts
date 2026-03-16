@@ -157,11 +157,11 @@ The Department of Philosophy and Ethics`,
     context: "Peer tutor reaching out to a student",
     text: `Hey!
 
-I'm your assigned peer tutor for CHEM 201 this semester. My name's Diego and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry — honestly same, orgo almost broke me last year lol.
+    I'm your assigned peer tutor for CHEM 201 this semester. My name's Diego and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
 
-I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
+    I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
 
-Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment — everyone struggles with chair conformations at first 😅
+    Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
 
 Looking forward to working with you!
 Diego`,
