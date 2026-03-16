@@ -25,7 +25,7 @@ export const scenarios: Scenario[] = [
   {
     id: 1,
     title: "The Suspicious Essay",
-    description: "Professor Martinez notices that a typically average student, Alex, has submitted an exceptionally well-written research paper. The writing style seems different from Alex's previous work — more polished, more structured, with sophisticated vocabulary. However, Alex has been attending extra tutoring sessions this semester.",
+    description: "Professor Martinez notices that a typically average student, Alex, has submitted an exceptionally well-written research paper. The writing style seems different from Alex's previous work - more polished, more structured, with sophisticated vocabulary. However, Alex has been attending extra tutoring sessions this semester.",
     excerpt: `"The implications of quantum computing on modern cryptographic systems represent a paradigm shift in our understanding of digital security. As Shor's algorithm demonstrates, the computational complexity assumptions underlying RSA encryption become fundamentally untenable in a post-quantum landscape..."`,
     options: [
       { id: "flag", label: "Flag as AI-generated", description: "Report the student for academic misconduct" },
