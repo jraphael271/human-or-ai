@@ -16,7 +16,7 @@ export const emails: Email[] = [
 
 I hope this email finds you well. I'm writing to request a short extension on the research paper due this Friday. I've been dealing with some personal issues this week that have made it difficult to focus, and I want to make sure I submit work that meets the standard you expect.
 
-Would it be possible to have until Monday? I already have a solid outline and most of my sources gathered — I just need a couple more days to pull it all together properly.
+Would it be possible to have until Monday? I already have a solid outline and most of my sources gathered - I just need a couple more days to pull it all together properly.
 
 Thank you for your understanding.
 
