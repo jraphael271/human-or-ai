@@ -30,7 +30,7 @@ Jamie`,
     context: "Teaching assistant announcing office hours change",
     text: `Dear Students,
 
-I am writing to inform you that my office hours for the remainder of this semester will be adjusted. Effective immediately, my office hours will transition from Tuesdays and Thursdays, 2:00 PM – 4:00 PM, to Mondays and Wednesdays, 3:00 PM – 5:00 PM.
+I am writing to inform you that my office hours for the remainder of this semester will be adjusted. Effective immediately, my office hours will transition from Tuesdays and Thursdays, 2:00 PM - 4:00 PM, to Mondays and Wednesdays, 3:00 PM - 5:00 PM.
 
 This change is being implemented to better accommodate the schedules of the majority of students enrolled in the course. Should you require assistance outside of these newly established hours, please do not hesitate to reach out via email to schedule an individual appointment.
 
