@@ -46,9 +46,9 @@ Alex Rivera, Teaching Assistant`,
     context: "Student responding to a group project message",
     text: `Hey everyone,
 
-So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section — nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
+    So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
 
-@Sarah — can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
+    @Sarah - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
 
 Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
 
