@@ -81,7 +81,7 @@ Dr. Williams`,
     context: "Student complaint email to university administration",
     text: `To whom it may concern,
 
-I'm writing because I've had a really frustrating experience with the financial aid office this semester. I submitted my FAFSA back in February and was told my package would be ready by April. It's now May and I still haven't received anything concrete — just vague emails saying it's "being processed."
+I'm writing because I've had a really frustrating experience with the financial aid office this semester. I submitted my FAFSA back in February and was told my package would be ready by April. It's now May and I still haven't received anything concrete - just vague emails saying it's "being processed."
 
 I've called three times and visited in person twice. Each time I get a different answer. Meanwhile, my tuition payment deadline is in two weeks and I genuinely don't know how I'm supposed to pay.
 
