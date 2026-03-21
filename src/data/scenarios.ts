@@ -46,7 +46,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "Alex loses trust in the system and becomes anxious about submitting future work, even holding back their improved writing.",
       ethicalReflection:
-        "Should improvement be treated as a red flag? How can we tell the difference between real growth and dishonesty without punishing students for getting better?",
+        "From a Value Sensitive Design perspective, the professor should first identify the relevant stakeholders and values: academic integrity, fairness, trust, and student development. A sudden improvement is not itself proof of misconduct. The key issue is whether suspicion turns into unfair discrimination or a false positive. Duty ethics also matters here: educators have a duty not to accuse students without sufficient grounds. So the real question is what a justified and contestable norm for AI suspicion should look like, and how to avoid a system that punishes genuine learning because it treats deviation from past performance as a red flag.",
     },
     {
       optionId: "allow",
@@ -56,7 +56,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "This is fair to Alex, but it may create an uneven playing field if AI use is common and not consistently addressed.",
       ethicalReflection:
-        "Is it better to let some cases slip through, or risk accusing innocent students? Where should the line be?",
+        "This option protects Alex from wrongful harm, but it raises a broader value conflict between fairness to this student and fairness across the whole class. In the lecture terms, the issue is not just individual judgment but the lack of a SMART guideline for acceptable AI assistance. Without clear norms, enforcement becomes inconsistent, and similar cases will be treated differently. A consequentialist might accept some missed violations to avoid harmful false accusations, while a duty-based view would stress equal treatment under known rules. The deeper design question is whether the institution has translated the value of academic integrity into actionable, transparent, and contestable policy.",
     },
     {
       optionId: "clarify",
@@ -66,7 +66,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "The conversation builds trust, but it takes time and may not be practical with large classes.",
       ethicalReflection:
-        "One-on-one conversations work well, but they don’t scale. How can we build trust without needing to question every student?",
+        "This is strongest in terms of accountability because it improves both transparency and contestability. The student is given a chance to explain the process, challenge suspicion, and provide understandable reasons for the final judgment. It also reflects care ethics, since it treats the student as a person in a relationship of trust rather than as a risk score. But the scalability problem remains real. The lecture point is that values are only the beginning: they must be turned into design requirements. So the next step would be to create SMART norms, such as requiring process evidence or disclosure in specific cases, instead of relying on ad hoc suspicion alone.",
     },
   ],
 },
@@ -90,7 +90,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "The decision hits a student from a disadvantaged background the hardest, and adds to existing inequalities.",
       ethicalReflection:
-        "If we punish polished writing, are we hurting the people who rely on support tools the most? Is using Grammarly really that different from using ChatGPT?",
+        "This is a clear non-discrimination problem. The lectures stress that bias becomes ethically serious when it leads to systematic disadvantage for certain groups. Here, polished writing is treated as suspicious in a way that may disproportionately burden non-native speakers and students who depend on support tools. The counselor may believe they are detecting misconduct, but in practice they risk scaling existing social inequalities. From a duty-based perspective, there is also a problem of procedural fairness: Sam is denied equal consideration without explanation or an opportunity to contest the judgment. The key question is whether the institution is mistaking difference in expression for evidence of cheating, and whether its norm is producing unfair bias.",
     },
     {
       optionId: "accept",
@@ -100,7 +100,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "Sam gets the internship and does well. Still, the counselor wonders if they would feel the same if Sam had struggled in the interview.",
       ethicalReflection:
-        "Do we judge people by what they produce, or how they produce it? If AI helps non-native speakers compete, is that support or cheating?",
+        "This option treats the output as the primary object of evaluation, which supports equal access, but it leaves open the unresolved value conflict between authenticity and assistance. The course repeatedly shows that technology is not value-neutral, and writing tools embed implicit values about fluency, professionalism, and efficiency. So the ethical question is not simply whether AI was used, but what kind of assistance counts as acceptable in this context. If AI support helps level the playing field for disadvantaged applicants, that may promote fairness rather than undermine it. The real need is for a justified norm that distinguishes support, authorship, and deception in a way that can be applied consistently.",
     },
     {
       optionId: "interview",
@@ -110,7 +110,7 @@ export const scenarios: Scenario[] = [
       consequence:
         "The result is positive, but the extra step wasn’t applied equally and may reflect unconscious bias.",
       ethicalReflection:
-        "How do we check for authenticity without unfairly targeting people? When does being careful turn into discrimination?",
+        "This looks reasonable on the surface, but it raises a fairness problem because the burden of proof is not distributed equally. In lecture terms, the system becomes contestable for Sam, but only because Sam is singled out. That creates a new value conflict between verification and equal treatment. A care-ethical approach would ask how this affects the social relationship and whether the candidate is made to feel distrusted or stigmatized. A VSD approach would ask whether the rule is grounded in stakeholder values and whether it could be turned into a general SMART guideline. If only some people get extra scrutiny, caution can slide into discrimination.",
     },
   ],
 },
@@ -142,7 +142,7 @@ async function optimizeQueryExecution(queries: Query[]): Promise<Result[]> {
       consequence:
         "Reporting it right away hurts the whole group and doesn’t fix the unclear policy.",
       ethicalReflection:
-        "AI coding tools are common in real-world development. Should schools reflect that, or keep stricter rules?",
+        "The core problem here is not only Riley’s conduct but the absence of a clear norm. The lectures stress that guidelines are only useful when they are grounded in stakeholder values and are actionable. Here, the institution failed to turn abstract concerns about authorship and fairness into SMART rules. That creates an accountability problem, because students cannot reasonably know what standard they are being held to. In terms from the Artificial Minds lectures, this also risks an achievement gap: who deserves credit for strong code when human work and AI assistance are mixed? Reporting may be defensible, but without prior norms it mainly exposes a governance failure.",
     },
     {
       optionId: "ignore",
@@ -152,7 +152,7 @@ async function optimizeQueryExecution(queries: Query[]): Promise<Result[]> {
       consequence:
         "Avoiding the issue doesn’t solve it. It just shows up in other ways.",
       ethicalReflection:
-        "If we don’t talk about AI use, does frustration just build under the surface? Is staying quiet the same as accepting it?",
+        "Silence does not make the value conflict disappear. It simply pushes it into informal judgments, resentment, and opaque peer evaluation. That is ethically risky because the group loses transparency about what happened and accountability for how credit is assigned. The question is not just whether Copilot was used, but whether the use was understood, reviewed, and integrated responsibly. If Riley used AI as a tool but still exercised knowledge and control over the code, that matters for responsibility. If not, the fairness concern is stronger. The lecture point is that hidden norms produce bad outcomes, because people still enforce standards, just unofficially and inconsistently.",
     },
     {
       optionId: "discuss",
@@ -162,7 +162,7 @@ async function optimizeQueryExecution(queries: Query[]): Promise<Result[]> {
       consequence:
         "The discussion leads the professor to update the course rules with clear guidelines for future students.",
       ethicalReflection:
-        "Being open about AI helps everyone. But should students be the ones setting these norms, or should schools take the lead?",
+        "This response best matches the course emphasis on transparency, accountability, and turning values into design. Disclosure in the README increases transparency about process, while team discussion makes the work more contestable and easier to justify. It also lets the group assess the relevant accountability conditions: did Riley know what the code did, have control over it, and competently review it? If yes, AI use looks more like assisted authorship than pure outsourcing. The remaining issue is institutional: students should not have to invent the rules on their own. The professor should translate values like fairness, learning, and responsibility into SMART guidelines for future projects.",
     },
   ],
 },
@@ -192,7 +192,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "Morgan’s record is affected, and they stop using the tool that helped them express their ideas clearly.",
       ethicalReflection:
-        "Where do we draw the line between support and authorship? If a human editor made the same changes, would we call it cheating?",
+        "This treats formal sameness as fairness, but the lectures show that what is fair is not always obvious. A system can appear neutral while still producing discrimination when it ignores relevant differences in people’s situations. If AI assistance functions here as an accessibility measure, banning it may create systematic disadvantage rather than equal treatment. From a rights-and-duties perspective, the institution has duties not only to protect integrity but also to provide fair access. The central ethical question is where authorship ends and support begins, and whether the university is applying a norm that protects learning or one that silently excludes disabled students.",
     },
     {
       optionId: "dismiss",
@@ -202,7 +202,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "Morgan is protected, but the decision makes it harder to tell the difference between real accommodations and general AI use.",
       ethicalReflection:
-        "How do we support real accessibility needs without opening the door to misuse? Is it even possible to draw that line fairly?",
+        "This protects Morgan in the short term, but it leaves the value conflict unresolved. The lectures warn that abstract norms like 'be fair' are not enough. The institution still needs a more specific account of what counts as an accommodation, what level of intervention is acceptable, and how this should be documented. Otherwise, a justified exception becomes an unclear general practice. That does not mean Morgan’s use is wrong. It means the university has failed to convert the values of inclusion, fairness, and integrity into SMART and contestable guidance. The hard part is not recognizing the value, but translating it into workable design and policy.",
     },
     {
       optionId: "accommodate",
@@ -212,7 +212,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "It takes time, and current cases are left uncertain. But it leads to a framework that other schools begin to use.",
       ethicalReflection:
-        "Big changes take time. How do we support students now while building better systems for the future?",
+        "This is the strongest Value Sensitive Design response because it begins with stakeholders, identifies their values, specifies the concept at stake, and then builds norms. It also fits the course point that ethical AI is not solved by one principle alone. Accessibility, fairness, integrity, and equal treatment can conflict, so they must be balanced rather than assumed to align automatically. A good policy would make the accommodation rule specific, measurable, and contestable, instead of leaving students to argue case by case. The remaining challenge is temporal: how to treat present students fairly while the institution is still building the norm.",
     },
   ],
 },
@@ -236,7 +236,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "Kai gets a revised letter but the relationship becomes strained. Other students with similar letters never realize it.",
       ethicalReflection:
-        "If professors use AI for tasks like reference letters, does it weaken their value? Or is it just a practical response to heavy workloads?",
+        "This raises a problem of transparency and possible achievement gaps. A reference letter is valuable because it is supposed to communicate a human judgment rooted in personal knowledge. When AI-generated praise is passed off as individualized assessment, the letter may still contain true claims, but its social meaning changes. Kai also lacks transparency about how the letter was produced and whether it reflects genuine attention. From a duty-based perspective, the issue is not just efficiency but honesty in representation. The question is whether AI drafting preserves the recommender’s authorship and accountability, or whether it weakens the practice by simulating care without actually providing it.",
     },
     {
       optionId: "accept",
@@ -246,7 +246,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "The system keeps working, but the sense of authenticity fades and no one addresses it.",
       ethicalReflection:
-        "If everyone uses AI, do recommendation letters lose their meaning? What would a more honest system look like?",
+        "This keeps the system functioning, but it normalizes opacity. In lecture terms, the problem is less about raw output quality and more about accountability and trust. If recommendation letters become generic AI artifacts, then the institution still distributes praise and opportunity, but without a clear account of who deserves credit for the content or who stands behind it. That weakens the practice itself. A care-ethical view also matters here: recommendation letters are relational documents, and their value partly comes from attention, knowledge, and endorsement. If everyone uses AI silently, the norm has changed without anyone openly justifying that change.",
     },
     {
       optionId: "request",
@@ -256,7 +256,7 @@ Morgan's submitted paragraph: "Renewable energy is a key investment in our share
       consequence:
         "The new letter is stronger and feels genuine. Dr. Patel also starts keeping better notes to rely less on AI in the future.",
       ethicalReflection:
-        "Speaking up can help, but should students have to do that? What should be in place to make sure recommendations are actually personal?",
+        "This response improves explainability and accountability because the final letter can now be justified by concrete examples. It does not reject AI outright, but it reasserts human control over the final output, which matches the lecture idea that users should actively review and approve AI-generated text. It also restores the practice’s core value: the letter becomes contestable, specific, and genuinely tied to the recommender’s knowledge. The broader lesson is that a good guideline here would not just say 'use AI responsibly.' It would specify when AI drafting is acceptable and require human verification plus individualized evidence before submission.",
     },
   ],
 },
