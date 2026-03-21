@@ -1,4 +1,4 @@
-export type EmailLabel = "Human" | "AI" | "Edited by AI";
+export type EmailLabel = "Human" | "AI";
 
 export interface Email {
   id: number;
