@@ -73,7 +73,7 @@ I encourage you to revise and resubmit by the end of next week. Please feel free
 
 Best regards,
 Dr. Williams`,
-    label: "Edited by AI",
+    label: "AI",
     explanation: "The structure is AI-typical (numbered lists, formal courtesy), but contains specific, contextual feedback that suggests a human edited AI-generated scaffolding.",
   },
   {
