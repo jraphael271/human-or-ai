@@ -186,4 +186,248 @@ Jill Smith`,
     label: "Edited by AI",
     explanation: "The letter follows a suspiciously perfect structure with AI-typical phrases ('express my interest', 'at your earliest convenience'), but includes specific personal details that suggest human editing of an AI draft.",
   },
+  {
+    id: 11,
+    context: "Student asking for lecture slides to be published",
+    text: `Dear Dr. Doe,
+
+Could you please publish the slides for lecture 5?
+
+Thank you,
+
+John Smith`,
+    label: "Human",
+    explanation: "Very brief and direct request with natural simplicity and no polished AI-style filler.",
+  },
+  {
+    id: 12,
+    context: "Student asking about a possible grade increase on an assignment",
+    text: `Good afternoon Professor Doe,
+
+I hope you are doing well. I would like to ask for your opinion on possibly increasing my grade for Assignment 1.
+
+For question 5, I was marked down for not answering the last question, being "What kind of problems did you encounter?"
+
+In that part of the assignment I didn't encounter any problems so instead I explained what problem I was able to avoid. Do you think this is a sufficient answer?
+
+Thank you for your time and consideration,
+
+Best Regards,
+
+Joe Smith`,
+    label: "Human",
+    explanation: "Specific reference to grading details and slightly awkward phrasing reflect authentic student writing.",
+  },
+  {
+    id: 13,
+    context: "Student following up on a missing assignment grade",
+    text: `Dear Jane,
+
+Professor Doe mentioned that all the assignments should have been graded by now, however I do not see my grade for the latest assignment. Could you please let me know if our assignment was properly submitted and will receive a grade. Thank you.
+
+Best Regards,
+
+Joe Smith`,
+    label: "Human",
+    explanation: "Concrete academic context, minor grammatical roughness, and straightforward wording make it feel genuinely human.",
+  },
+  {
+    id: 14,
+    context: "Student expressing interest in becoming a teaching assistant",
+    text: `Good evening Mr. Doe,
+ 
+I am writing to express my interest in becoming a teaching assistant for next year's course.
+
+Could you please provide me with information on when and where I should expect to apply for this position? I would like to know about any specific requirements or deadlines I should be aware of.
+
+ 
+Thank you for your time.
+
+Sincerely,
+
+John Smith`,
+    label: "Human",
+    explanation: "Formal but slightly uneven phrasing suggests a real student writing carefully rather than a polished AI output.",
+  },
+  {
+    id: 15,
+    context: "Student asking whether a lecture recording will be shared",
+    text: `Good afternoon,
+
+
+I would like to know if the recording of tomorrow's lecture will be shared to students, and if so where?
+
+Thank you, 
+
+John Smith`,
+    label: "Human",
+    explanation: "Short functional message with natural wording and no elaborate structure typical of everyday student emails.",
+  },
+  {
+    id: 16,
+    context: "Student requesting an extension after a group member dropped the course",
+    text: `Dear Professor John,
+
+I wanted to ask if it would be possible to get an extension for assignment 2 since one of our group members informed us yesterday that he is not participating in the course anymore. There are only 2 people in our group now and it would be great if we can have more time to complete the assignment. We should be able to complete it before Thursday. Please let me know if this is possible, thanks in advance!
+
+Kind regards,
+Joe Smith`,
+    label: "Human",
+    explanation: "Specific situational detail and practical justification give it an authentic, human-written feel.",
+  },
+  {
+    id: 17,
+    context: "Student following up about an incorrect exam attendance grade",
+    text: `Dear Prof. Doe,
+
+I am emailing to ask about the wrong grade input since the system shows that I was not present at the exam even though I was and have got a grade for it. I have emailed about this issue last week and haven’t got a response so I wanted to check up on this again. Please let me know if this issue will be resolved soon.
+
+Kind regards,
+John Smith`,
+    label: "Human",
+    explanation: "Realistic administrative issue, mild frustration, and imperfect phrasing point to genuine human authorship.",
+  },
+  {
+    id: 18,
+    context: "Student informing a teaching assistant they are sick and absent from class",
+    text: `Dear Jane,
+
+Unfortunately I won’t be able to make it to class today because I am sick, sorry about that!
+
+John Smith`,
+    label: "Human",
+    explanation: "Very casual and concise with natural apology, typical of a quick human absence note.",
+  },
+  {
+    id: 19,
+    context: "Student asking whether a listed course reader will be shared",
+    text: `Dear Professor Scott,
+
+I wanted to ask if the reader listed on canvas would be shared since it would be helpful to have other materials to study with other than the lecture slides. Please let me know.
+
+Kind regards,
+Joe Smith`,
+    label: "Human",
+    explanation: "Ordinary student request with simple phrasing and a practical motivation, without AI-style embellishment.",
+  },
+  {
+    id: 20,
+    context: "Student asking to discuss a bachelor thesis project",
+    text: `Dear Jane,
+
+My name is John and I am a 3rd year AI bachelor student. I am interested in doing the ‘Epistemic Logic in Fault Diagnosis’ for my thesis project since I’ve taken a Formal Logic course last December and would like to explore how it can be used in a practical setting in AI applications. Would it be possible to have a meeting to discuss more about the project? Please let me know.
+
+Kind regards,
+John Smith`,
+    label: "Human",
+    explanation: "Personal academic background, specific project interest, and slightly clunky phrasing make it sound naturally human.",
+  },
+  {
+    id: 21,
+    context: "Student declining a nominated summer school exchange opportunity",
+    text: `Dear Jane,
+Thank you so much for selecting me and for taking the time to reach out. I'm truly honored to have been nominated for the summer school exchange at a partner university abroad.
+Unfortunately, due to personal reasons, I am unable to accept this spot at this time. I hope it can be offered to another deserving candidate.
+I sincerely appreciate the opportunity and the work your team puts into these programs. I hope to explore other exchange opportunities in the future.
+Kind regards,
+John Doe`,
+    label: "Human",
+    explanation: "Polite and appreciative tone with a personal decline reads like genuine human correspondence.",
+  },
+  {
+    id: 22,
+    context: "Student replying to confirm they will wait for a meeting invitation",
+    text: `Hi John,
+Thank you for letting me know! I’ll be waiting for your email and invitation for the meeting all together.
+Best regards,
+John Doe`,
+    label: "Human",
+    explanation: "Informal reply with slightly awkward wording feels natural and not machine-polished.",
+  },
+  {
+    id: 23,
+    context: "Student asking how to register for an extra exam opportunity",
+    text: `Dear John,
+I would like to register for the extra examination opportunity for the your course. However, unlike my other course, the course registration page does not display a registration option for this one. Please let me know if there is anything I need to do to take part in the exam. Thank you for helping.
+Best regards,
+John Doe`,
+    label: "Human",
+    explanation: "Contains minor grammatical errors and a very practical request, both strong signs of human writing.",
+  },
+  {
+    id: 24,
+    context: "Student seeking supervision for a self-chosen bachelor thesis topic",
+    text: `Dear Prof. Doe,
+
+I would like to do Bachelor Thesis research project about Automated Power Systems and Power Automation Algoritms. As it is a self-chosen topic, I do need to find a supervisor and I believe, based on your past researches, that you would be a great specialist in this topic!
+If you had the availability, I would love to schedule a short indtroductory meeting, when I can present to you my specific topic, and hopefully convince you about my motivation behind starting the research in this topic.
+
+Thank you very much in advance, and I am looking forward to hear back from you!
+
+Kind regards,
+John Smith`,
+    label: "Human",
+    explanation: "Typos, enthusiastic tone, and non-native phrasing strongly suggest authentic human authorship.",
+  },
+  {
+    id: 25,
+    context: "Student asking about a missing partial grade transfer",
+    text: `Dear Prof. Smith,
+
+At the beginning of the course I have requested a partial grade transfer, as I did this course last year, however we have just received the final subject gerade on vu.nl and I believe grades from my assignments were not taken into the consideration, as the final grade is lower than what I calculated. Without assignments taken into consideration I should have a grade 7.5, then as I had 9.5 from all assignments last year, the final course grade should be 8.5 then.
+I think maybe the transfer was not registered, as I also cannot still see it on Canvas, probably that is why on vu.nl the grade is different. The grade transfer usually takes place in the end of the course, that is why I did not contact earlier than today, hopefully that still can be adjusted!
+
+Looking forward to hearing back from you.
+
+Kind regards,
+John Doe`,
+    label: "Human",
+    explanation: "Detailed grade calculation, spelling mistakes, and long winding sentences are typical of genuine student emails.",
+  },
+  {
+    id: 26,
+    context: "Student asking about eligibility for an extra exam date after severe winter travel disruption",
+    text: `Dear Prof. Doe,
+I live in Utrecht, and I was one of the students that in January could not attend the resit exam, because of the extreme winter conditions in the Netherlands. Unfortunately, I don't have a car, therefore I am always fully dependent on the public transportation. All the trains to Amsterdam were cancelled, and there was no working alternative transportation or bus that day, therefore I was not able to arrive.
+I informed the examination board in January, but now I don't see any registration for the additional date of the exam, which is coming this week, and I wanted to check if I am still allowed to take the exam, even though I can't see myself in the system, or should I contact some department for registration?
+
+Thank you very much in advance for your answer!
+
+Kind regards,
+Joe Doe`,
+    label: "Human",
+    explanation: "Personal circumstances, detailed context, and natural over-explanation make this clearly human-written.",
+  },
+  {
+    id: 27,
+    context: "Student requesting an exception to the practical-session absence rule due to illness",
+    text: `Dear Prof. Smith,
+
+Unfortunately, I have had a very strong fever for the past week, and I am still not healthy this week. Last week, I missed 2 practical sessions because of that, so I already used all of the possible absences, and I don't think I should attend the practical sessions this week too.
+My doctor gave me the official document from him, so I can show it if requested. Also I do still contribute to the project, even when being sick, so I am very kindly asking if there can be an exception from the 2 absence maximum rule for me? I really do need to pass this subject in the current school year, so retaking it next year does not work well for me.
+
+I have already had a meeting with the Academic Advisor, and she told me to directly discuss it with you, if my case can be re-evaluated.
+
+Thank you in advance for answering to my email!
+
+Kind regards,
+John Doe`,
+    label: "Human",
+    explanation: "Emotionally invested, detailed, and somewhat awkwardly phrased in a way that feels authentically human.",
+  },
+  {
+    id: 28,
+    context: "Student requesting access to inspect a graded exam",
+    text: `Dear Prof. Doe,
+
+I have not seen any official announcement on Canvas or email about the inspection of the graded exams. However, I just checked my answers with the given solutions, and I believe my grade should be higher than the grade I received on Canvas.
+Is it possible to see my exam, if there is no official inspection, could I please request the copy of my exam please? I would like to go through it and double-check as the grade from this subject is very important for me, and every point counts.
+
+Thank you very much in advance for your reply!
+
+Kind regards,
+John Smith`,
+    label: "Human",
+    explanation: "Specific academic concern, repetitive phrasing, and personal emphasis on points all indicate natural human writing.",
+  },
 ];
