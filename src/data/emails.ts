@@ -183,7 +183,7 @@ Thank you for your consideration.
 
 Sincerely,
 Taylor Chen`,
-    label: "Edited by AI",
+    label: "AI",
     explanation: "The letter follows a suspiciously perfect structure with AI-typical phrases ('express my interest', 'at your earliest convenience'), but includes specific personal details that suggest human editing of an AI draft.",
   },
 ];

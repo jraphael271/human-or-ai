@@ -14,7 +14,7 @@ const choices: { label: EmailLabel; icon: React.ReactNode; description: string }
 
 export function ChoiceButtons({ selected, onSelect, disabled }: ChoiceButtonsProps) {
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className="grid grid-cols-2 gap-3">
       {choices.map((c) => (
         <button
           key={c.label}
