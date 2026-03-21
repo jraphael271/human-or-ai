@@ -27,11 +27,13 @@ export function StatsSummary({ score, rounds, decisions, onReset }: StatsSummary
   const highConfidenceWrong = rounds.filter((r) => r.confidence === "high" && !r.correct).length;
 
   const reflectionPrompts = [
-    "Can AI writing actually be detected reliably?",
-    "What evidence is enough to accuse someone of using AI?",
-    "Should AI assistance always be considered cheating?",
-    "What policies would be fair for both students and educators?",
-    "How should institutions adapt to a world where AI writing tools are ubiquitous?",
+    "How should we define authorship when a student and an AI system both contribute to the final text?",
+    "When AI-generated writing contains errors or misinformation, where should responsibility and accountability lie?",
+    "Does AI assistance violate academic integrity, or can it count as legitimate support in some contexts?",
+    "What makes a university response to suspected AI use fair and non-discriminatory?",
+    "Are AI detectors still fair if they cannot reliably explain or justify their judgments?",
+    "How can universities create transparent, contestable, and consistent rules for acceptable AI use in student writing?",
+    "What values should universities prioritise when adapting to widespread AI writing tools: learning, fairness, efficiency, trust, or something else?"
   ];
 
   return (
