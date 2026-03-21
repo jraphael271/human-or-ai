@@ -176,7 +176,7 @@ export default function Game() {
                   icon: <Search className="w-6 h-6" />,
                   step: "Step 2",
                   title: "Classify the author",
-                  desc: "Decide: was it written by a Human, AI, or Edited by AI?",
+                  desc: "Decide: was it written by a Human or AI?",
                 },
                 {
                   icon: <Zap className="w-6 h-6" />,
