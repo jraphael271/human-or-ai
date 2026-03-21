@@ -1,4 +1,4 @@
-export type EmailLabel = "Human" | "AI";
+export type EmailLabel = "Human" | "AI" | "Edited by AI";
 
 export interface Email {
   id: number;
@@ -73,7 +73,7 @@ I encourage you to revise and resubmit by the end of next week. Please feel free
 
 Best regards,
 Dr. Williams`,
-    label: "AI",
+    label: "Edited by AI",
     explanation: "The structure is AI-typical (numbered lists, formal courtesy), but contains specific, contextual feedback that suggests a human edited AI-generated scaffolding.",
   },
   {
@@ -149,7 +149,7 @@ We look forward to your attendance.
 
 Best regards,
 The Department of Philosophy and Ethics`,
-    label: "AI",
+    label: "Edited by AI",
     explanation: "The structure and tone are AI-generated, but specific details (speaker name, room number, topic) were likely inserted by a human editor.",
   },
   {
@@ -183,7 +183,7 @@ Thank you for your consideration.
 
 Sincerely,
 Taylor Chen`,
-    label: "AI",
+    label: "Edited by AI",
     explanation: "The letter follows a suspiciously perfect structure with AI-typical phrases ('express my interest', 'at your earliest convenience'), but includes specific personal details that suggest human editing of an AI draft.",
   },
 ];
