@@ -149,7 +149,7 @@ We look forward to your attendance.
 
 Best regards,
 The Department of Philosophy and Ethics`,
-    label: "Edited by AI",
+    label: "AI",
     explanation: "The structure and tone are AI-generated, but specific details (speaker name, room number, topic) were likely inserted by a human editor.",
   },
   {
