@@ -12,7 +12,7 @@ export const emails: Email[] = [
   {
     id: 1,
     context: "Student emailing a professor about a deadline extension",
-    text: `Hi Professor Chen,
+    text: `Hi Professor Doe,
 
 I hope this email finds you well. I'm writing to request a short extension on the research paper due this Friday. I've been dealing with some personal issues this week that have made it difficult to focus, and I want to make sure I submit work that meets the standard you expect.
 
@@ -21,7 +21,7 @@ Would it be possible to have until Monday? I already have a solid outline and mo
 Thank you for your understanding.
 
 Best,
-Jamie`,
+Joe`,
     label: "Human",
     explanation: "Natural tone with personal context, minor imperfections in structure, and authentic voice typical of student communication.",
   },
@@ -37,7 +37,7 @@ This change is being implemented to better accommodate the schedules of the majo
 I appreciate your understanding and flexibility regarding this matter.
 
 Sincerely,
-Alex Rivera, Teaching Assistant`,
+Jane Doe, Teaching Assistant`,
     label: "AI",
     explanation: "Overly formal language, rigid structure, and phrases like 'I am writing to inform you' and 'do not hesitate' are hallmarks of AI-generated text.",
   },
@@ -48,11 +48,11 @@ Alex Rivera, Teaching Assistant`,
 
     So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
 
-    @Sarah - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
+    @Jane - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
 
 Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
 
-- Marcus`,
+- Jill`,
     label: "Human",
     explanation: "Casual tone, direct references to specific details, @-mentions, and natural conversational flow indicate genuine human writing.",
   },
@@ -72,7 +72,7 @@ However, I would like to highlight a few areas for improvement:
 I encourage you to revise and resubmit by the end of next week. Please feel free to visit during office hours if you'd like to discuss these points further.
 
 Best regards,
-Dr. Williams`,
+Dr. Doe`,
     label: "Edited by AI",
     explanation: "The structure is AI-typical (numbered lists, formal courtesy), but contains specific, contextual feedback that suggests a human edited AI-generated scaffolding.",
   },
@@ -88,7 +88,7 @@ I've called three times and visited in person twice. Each time I get a different
 I'm not trying to be difficult, but I need someone to actually look into this and give me a clear answer. This has been incredibly stressful and it's affecting my ability to focus on my coursework.
 
 Thank you,
-Jordan Park
+Jill Smith
 Student ID: 2023-44891`,
     label: "Human",
     explanation: "Emotional authenticity, specific details about personal experience, and natural frustration make this clearly human-written.",
@@ -105,7 +105,7 @@ As your academic advisor, I am here to support you in navigating your curriculum
 Please find attached the orientation schedule and a comprehensive guide to departmental resources. I look forward to meeting each of you during the orientation session on September 5th.
 
 Warm regards,
-Dr. Patricia Hoffman
+Dr. Jill Smith
 Academic Advisor, Department of Computer Science`,
     label: "AI",
     explanation: "Generic, templated language with no personal touch. Phrases like 'embark on this exciting academic journey' and 'intellectual growth, professional development, and personal enrichment' are classic AI patterns.",
@@ -113,7 +113,7 @@ Academic Advisor, Department of Computer Science`,
   {
     id: 7,
     context: "Student emailing about a missed exam",
-    text: `Professor Nakamura,
+    text: `Professor Doe,
 
 I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off - I think my phone died overnight because I forgot to plug it in.
 
@@ -124,7 +124,7 @@ I'm available to take the exam at any time that works for you, including evening
 I'm really sorry about this.
 
 Thank you,
-Priya Sharma`,
+Jill Smith`,
     label: "Human",
     explanation: "Self-aware tone ('I know this is going to sound like every excuse'), genuine accountability, and personal details make this authentically human.",
   },
@@ -133,7 +133,7 @@ Priya Sharma`,
     context: "Department newsletter about an upcoming guest lecture",
     text: `Dear Members of the University Community,
 
-We are pleased to announce an upcoming guest lecture that promises to be both enlightening and thought-provoking. Dr. Elena Rodriguez, a distinguished researcher in the field of artificial intelligence ethics, will be delivering a lecture entitled "The Moral Machine: Navigating Ethical Dilemmas in AI Development."
+We are pleased to announce an upcoming guest lecture that promises to be both enlightening and thought-provoking. Dr. Jane Doe, a distinguished researcher in the field of artificial intelligence ethics, will be delivering a lecture entitled "The Moral Machine: Navigating Ethical Dilemmas in AI Development."
 
 Event Details:
 - Date: Thursday, November 14, 2024
@@ -141,7 +141,7 @@ Event Details:
 - Location: Harrison Auditorium, Room 201
 - Reception to follow in the Faculty Lounge
 
-Dr. Rodriguez's research has been published in numerous prestigious journals and has been recognized with several international awards. Her work focuses on the intersection of technology, philosophy, and public policy.
+Dr. Doe's research has been published in numerous prestigious journals and has been recognized with several international awards. Her work focuses on the intersection of technology, philosophy, and public policy.
 
 This event is free and open to all students, faculty, and staff. No registration is required.
 
@@ -157,21 +157,21 @@ The Department of Philosophy and Ethics`,
     context: "Peer tutor reaching out to a student",
     text: `Hey!
 
-    I'm your assigned peer tutor for CHEM 201 this semester. My name's Diego and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
+    I'm your assigned peer tutor for CHEM 201 this semester. My name's Joe and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
 
     I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
 
     Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
 
 Looking forward to working with you!
-Diego`,
+Joe`,
     label: "Human",
     explanation: "Informal language, humor, emoji use, self-deprecation, and casual scheduling indicate natural human communication.",
   },
   {
     id: 10,
     context: "Cover letter for a research assistant position",
-    text: `Dear Dr. Thompson,
+    text: `Dear Dr. Doe,
 
 I am writing to express my interest in the Research Assistant position in your Computational Linguistics Laboratory, as advertised on the university careers portal. As a second-year graduate student in the Department of Linguistics with a concentration in Natural Language Processing, I believe my academic background and research experience align well with the requirements of this role.
 
@@ -182,7 +182,7 @@ I have attached my CV and a brief writing sample for your review. I am available
 Thank you for your consideration.
 
 Sincerely,
-Taylor Chen`,
+Jill Smith`,
     label: "Edited by AI",
     explanation: "The letter follows a suspiciously perfect structure with AI-typical phrases ('express my interest', 'at your earliest convenience'), but includes specific personal details that suggest human editing of an AI draft.",
   },
