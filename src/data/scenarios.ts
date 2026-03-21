@@ -22,242 +22,242 @@ export interface Scenario {
 }
 
 export const scenarios: Scenario[] = [
-  {
-    id: 1,
-    title: "The Suspicious Essay",
-    description:
-      "Professor Martinez notices that a typically average student, Alex, has submitted an exceptionally well-written research paper. The writing style seems different from Alex's previous work - more polished, more structured, with sophisticated vocabulary. However, Alex has been attending extra tutoring sessions this semester.",
-    excerpt: `"The implications of quantum computing on modern cryptographic systems represent a paradigm shift in our understanding of digital security. As Shor's algorithm demonstrates, the computational complexity assumptions underlying RSA encryption become fundamentally untenable in a post-quantum landscape..."`,
-    options: [
-      { id: "flag", label: "Flag as AI-generated", description: "Report the student for academic misconduct" },
-      { id: "allow", label: "Accept the submission", description: "Grade the paper on its merits" },
-      {
-        id: "clarify",
-        label: "Ask for clarification",
-        description: "Meet with the student to discuss their writing process",
-      },
-    ],
-    outcomes: [
-      {
-        optionId: "flag",
-        title: "Wrongful Accusation",
-        description:
-          "Alex was called before the academic integrity board. After investigation, it was revealed that Alex had been working with a writing tutor and had genuinely improved. The accusation caused significant stress and damaged the student-professor relationship.",
-        consequence:
-          "Alex lost trust in the academic system and became anxious about submitting future work, even self-censoring their improved writing.",
-        ethicalReflection:
-          "Should improvement itself be grounds for suspicion? How do we distinguish growth from dishonesty without punishing students for getting better?",
-      },
-      {
-        optionId: "allow",
-        title: "Benefit of the Doubt",
-        description:
-          "The paper was graded normally and received a high mark. Alex felt validated for the hard work put into improvement. Other students who actually used AI went undetected in the same batch.",
-        consequence:
-          "While fair to Alex, this approach may create an uneven playing field if AI use is widespread but inconsistently enforced.",
-        ethicalReflection:
-          "Is it better to risk letting some AI use slip through than to risk falsely accusing genuine students? Where should the threshold be?",
-      },
-      {
-        optionId: "clarify",
-        title: "Open Conversation",
-        description:
-          "During the meeting, Alex walked through their research process, showed drafts and notes, and explained how tutoring helped. Professor Martinez gained confidence in the work's authenticity and provided constructive feedback.",
-        consequence:
-          "The conversation strengthened the academic relationship, but required significant time investment that may not scale across hundreds of students.",
-        ethicalReflection:
-          "Individual conversations are ideal but resource-intensive. How do we build systems of trust that don't require interrogating every student?",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "The AI Cover Letter",
-    description:
-      "A university career counselor reviews applications for a competitive internship program. One candidate, Sam, submitted a cover letter that's remarkably well-crafted - professional tone, perfect structure, zero errors. The counselor suspects AI assistance but has no proof. Sam comes from a disadvantaged background and English is their second language.",
-    excerpt: `"I am uniquely positioned to contribute to your organization's mission of advancing sustainable technology solutions. My interdisciplinary background in environmental science and data analytics, combined with my passion for evidence-based policy making, enables me to bridge the gap between technical research and practical implementation..."`,
-    options: [
-      { id: "reject", label: "Reject the application", description: "Disqualify for suspected AI use" },
-      { id: "accept", label: "Evaluate normally", description: "Judge the application on its content" },
-      { id: "interview", label: "Add an interview round", description: "Assess the candidate's abilities in person" },
-    ],
-    outcomes: [
-      {
-        optionId: "reject",
-        title: "Opportunity Denied",
-        description:
-          "Sam was rejected and never learned why. The internship went to a native English speaker whose application was similar in quality. Sam, who had used Grammarly and a university writing center, was denied an opportunity that could have changed their career trajectory.",
-        consequence:
-          "The decision disproportionately affected a student from a disadvantaged background, reinforcing existing inequalities.",
-        ethicalReflection:
-          "When we penalize polished writing, do we inadvertently discriminate against those who need writing tools the most? Is using Grammarly fundamentally different from using ChatGPT?",
-      },
-      {
-        optionId: "accept",
-        title: "Equal Consideration",
-        description:
-          "Sam's application was evaluated on its merits and they were selected for an interview. During the interview, Sam demonstrated genuine knowledge and passion, confirming the application's authenticity.",
-        consequence:
-          "Sam got the internship and thrived, but the counselor wondered if they'd have felt the same way if Sam had performed poorly in the interview.",
-        ethicalReflection:
-          "Should we judge people by their outputs or their tools? If an AI helps level the playing field for non-native speakers, is that assistance or deception?",
-      },
-      {
-        optionId: "interview",
-        title: "Additional Scrutiny",
-        description:
-          "An extra interview round was added specifically for Sam, though other candidates weren't subjected to the same scrutiny. Sam performed well but felt singled out and questioned whether bias played a role.",
-        consequence:
-          "While the outcome was positive, the additional barrier was applied inconsistently and may have been influenced by unconscious bias.",
-        ethicalReflection:
-          "How do we ensure that verification processes don't become tools of discrimination? When does 'due diligence' become 'targeting'?",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "The Group Project Dilemma",
-    description:
-      "In a group project for a software engineering course, teammate Riley has been contributing code that's unusually clean and well-documented. Another teammate, Casey, discovers that Riley has been using GitHub Copilot extensively. The project guidelines don't explicitly mention AI coding assistants. The deadline is tomorrow.",
-    excerpt: `// Riley's code submission
+{
+  id: 1,
+  title: "The Suspicious Essay",
+  description:
+    "Professor Martinez reads a paper from Alex, a student who usually does average work. This one stands out right away. The writing is clearer, better structured, and uses more advanced language than before. It doesn’t quite match Alex’s past work. But Alex has also been attending extra tutoring sessions this semester, so there may be a simple explanation.",
+  excerpt: `"The implications of quantum computing for modern cryptographic systems mark a major shift in how we think about digital security. As Shor's algorithm shows, the assumptions behind RSA encryption no longer hold in a post-quantum world..."`,
+  options: [
+    { id: "flag", label: "Flag as AI-generated", description: "Report the student for academic misconduct" },
+    { id: "allow", label: "Accept the submission", description: "Grade the paper on its merits" },
+    {
+      id: "clarify",
+      label: "Ask for clarification",
+      description: "Meet with the student to talk through their writing process",
+    },
+  ],
+  outcomes: [
+    {
+      optionId: "flag",
+      title: "Wrongful Accusation",
+      description:
+        "Alex is called before the academic integrity board. After a review, it becomes clear that Alex had been working with a tutor and had genuinely improved. The accusation causes stress and harms the relationship with the professor.",
+      consequence:
+        "Alex loses trust in the system and becomes anxious about submitting future work, even holding back their improved writing.",
+      ethicalReflection:
+        "Should improvement be treated as a red flag? How can we tell the difference between real growth and dishonesty without punishing students for getting better?",
+    },
+    {
+      optionId: "allow",
+      title: "Benefit of the Doubt",
+      description:
+        "The paper is graded as usual and receives a high mark. Alex feels rewarded for the effort put into improving. At the same time, other students who used AI go unnoticed.",
+      consequence:
+        "This is fair to Alex, but it may create an uneven playing field if AI use is common and not consistently addressed.",
+      ethicalReflection:
+        "Is it better to let some cases slip through, or risk accusing innocent students? Where should the line be?",
+    },
+    {
+      optionId: "clarify",
+      title: "Open Conversation",
+      description:
+        "In the meeting, Alex explains their research process, shows drafts and notes, and talks about how tutoring helped. Professor Martinez feels confident the work is original and gives helpful feedback.",
+      consequence:
+        "The conversation builds trust, but it takes time and may not be practical with large classes.",
+      ethicalReflection:
+        "One-on-one conversations work well, but they don’t scale. How can we build trust without needing to question every student?",
+    },
+  ],
+},
+{
+  id: 2,
+  title: "The AI Cover Letter",
+  description:
+    "A university career counselor reviews applications for a competitive internship. One candidate, Sam, submits a cover letter that stands out right away. It’s polished, well-structured, and has no errors. The counselor suspects AI help but has no proof. Sam comes from a disadvantaged background, and English is their second language.",
+  excerpt: `"I am well positioned to contribute to your organization's work in sustainable technology. My background in environmental science and data analytics, along with my interest in evidence-based policy, helps me connect research with real-world solutions..."`,
+  options: [
+    { id: "reject", label: "Reject the application", description: "Disqualify for suspected AI use" },
+    { id: "accept", label: "Evaluate normally", description: "Judge the application on its content" },
+    { id: "interview", label: "Add an interview round", description: "Assess the candidate’s abilities in person" },
+  ],
+  outcomes: [
+    {
+      optionId: "reject",
+      title: "Opportunity Denied",
+      description:
+        "Sam is rejected and never told why. The internship goes to a native English speaker with a similar application. In reality, Sam had used Grammarly and help from a university writing center. They miss out on an opportunity that could have changed their path.",
+      consequence:
+        "The decision hits a student from a disadvantaged background the hardest, and adds to existing inequalities.",
+      ethicalReflection:
+        "If we punish polished writing, are we hurting the people who rely on support tools the most? Is using Grammarly really that different from using ChatGPT?",
+    },
+    {
+      optionId: "accept",
+      title: "Equal Consideration",
+      description:
+        "Sam’s application is judged on its content and they get an interview. During the interview, Sam shows strong knowledge and real interest, which supports that the work is their own.",
+      consequence:
+        "Sam gets the internship and does well. Still, the counselor wonders if they would feel the same if Sam had struggled in the interview.",
+      ethicalReflection:
+        "Do we judge people by what they produce, or how they produce it? If AI helps non-native speakers compete, is that support or cheating?",
+    },
+    {
+      optionId: "interview",
+      title: "Additional Scrutiny",
+      description:
+        "An extra interview round is added just for Sam. Other candidates are not asked to do the same. Sam does well but feels singled out and wonders if bias played a role.",
+      consequence:
+        "The result is positive, but the extra step wasn’t applied equally and may reflect unconscious bias.",
+      ethicalReflection:
+        "How do we check for authenticity without unfairly targeting people? When does being careful turn into discrimination?",
+    },
+  ],
+},
+{
+  id: 3,
+  title: "The Group Project Dilemma",
+  description:
+    "In a software engineering group project, Riley has been submitting code that stands out. It’s clean, well-structured, and clearly documented. Another teammate, Casey, realizes Riley has been using GitHub Copilot a lot. The project guidelines don’t say anything about AI tools. The deadline is tomorrow.",
+  excerpt: `// Riley's code submission
 async function optimizeQueryExecution(queries: Query[]): Promise<Result[]> {
   const priorityQueue = new PriorityQueue<Query>((a, b) => a.complexity - b.complexity);
   queries.forEach(q => priorityQueue.enqueue(q));
   
   const results: Result[] = [];
   const connectionPool = await DatabasePool.initialize(CONFIG.maxConnections);
-  // ... extensive well-structured implementation
+  // ... well-structured implementation continues
 }`,
-    options: [
-      { id: "report", label: "Report to professor", description: "Flag Riley's AI tool usage" },
-      { id: "ignore", label: "Let it go", description: "Focus on finishing the project" },
-      { id: "discuss", label: "Talk to Riley", description: "Have an honest conversation about tool usage" },
-    ],
-    outcomes: [
-      {
-        optionId: "report",
-        title: "Group Consequences",
-        description:
-          "The professor investigated and found that the guidelines were ambiguous about AI coding assistants. Rather than penalizing Riley alone, the entire group's grade was put under review. The team dynamic collapsed, and the project suffered.",
-        consequence:
-          "Reporting without first seeking clarification harmed the entire team and didn't resolve the underlying policy ambiguity.",
-        ethicalReflection:
-          "In professional software development, AI coding assistants are standard tools. Should academic settings reflect professional norms, or maintain stricter boundaries?",
-      },
-      {
-        optionId: "ignore",
-        title: "Unaddressed Tension",
-        description:
-          "The project was submitted on time with high quality. However, Casey remained resentful, feeling the workload was unfair. In peer evaluations, Casey gave Riley low marks, citing 'unequal contribution' without mentioning AI.",
-        consequence:
-          "Avoiding the conversation didn't make the ethical tension disappear, it just manifested in indirect ways.",
-        ethicalReflection:
-          "When we avoid difficult conversations about AI use, do we create a culture of silent resentment? Is passive acceptance of AI tools a form of complicity?",
-      },
-      {
-        optionId: "discuss",
-        title: "Transparent Dialogue",
-        description:
-          "Riley explained that they used Copilot as a starting point but reviewed and understood every line. The team agreed to document their tool usage in the project README and asked the professor for clarification on the policy.",
-        consequence:
-          "The conversation led the professor to update the course policy with clear guidelines on AI tool usage for future semesters.",
-        ethicalReflection:
-          "Transparency about AI use benefits everyone. But should students be responsible for setting these norms, or should institutions lead?",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "The Accessibility Argument",
-    description:
-      "A student with dyslexia, Morgan, uses AI writing tools to help organize thoughts and correct grammar in their essays. A classmate reports Morgan to the academic integrity office, claiming unfair advantage. Morgan argues the AI is an accessibility tool, not a cheating mechanism.",
-    excerpt: `Morgan's original notes: "reneable enrgy importnt for fture. solar wind good but cost high. govrmnt need invest more. developing cntries need help too."
+  options: [
+    { id: "report", label: "Report to professor", description: "Flag Riley’s use of AI tools" },
+    { id: "ignore", label: "Let it go", description: "Focus on finishing the project" },
+    { id: "discuss", label: "Talk to Riley", description: "Have an open conversation about tool use" },
+  ],
+  outcomes: [
+    {
+      optionId: "report",
+      title: "Group Consequences",
+      description:
+        "The professor looks into it and finds the rules around AI tools are unclear. Instead of singling out Riley, the whole group’s work is reviewed. The team dynamic breaks down, and the project suffers.",
+      consequence:
+        "Reporting it right away hurts the whole group and doesn’t fix the unclear policy.",
+      ethicalReflection:
+        "AI coding tools are common in real-world development. Should schools reflect that, or keep stricter rules?",
+    },
+    {
+      optionId: "ignore",
+      title: "Unaddressed Tension",
+      description:
+        "The group submits a strong project on time. But Casey feels frustrated, thinking the workload wasn’t fair. In peer reviews, Casey gives Riley a low score and mentions 'unequal contribution' without bringing up AI.",
+      consequence:
+        "Avoiding the issue doesn’t solve it. It just shows up in other ways.",
+      ethicalReflection:
+        "If we don’t talk about AI use, does frustration just build under the surface? Is staying quiet the same as accepting it?",
+    },
+    {
+      optionId: "discuss",
+      title: "Transparent Dialogue",
+      description:
+        "Riley explains they used Copilot as a starting point but reviewed and understood everything. The team agrees to note their tool use in the README and asks the professor for clear guidance.",
+      consequence:
+        "The discussion leads the professor to update the course rules with clear guidelines for future students.",
+      ethicalReflection:
+        "Being open about AI helps everyone. But should students be the ones setting these norms, or should schools take the lead?",
+    },
+  ],
+},
+{
+  id: 4,
+  title: "The Accessibility Argument",
+  description:
+    "Morgan, a student with dyslexia, uses AI writing tools to organize ideas and fix grammar in essays. A classmate reports Morgan, saying this gives an unfair advantage. Morgan argues the AI is just an accessibility tool, not cheating.",
+  excerpt: `Morgan's original notes: "reneable enrgy importnt for fture. solar wind good but cost high. govrmnt need invest more. developing cntries need help too."
 
-Morgan's submitted paragraph: "Renewable energy represents a critical investment in our collective future. While solar and wind technologies have shown tremendous promise, the high initial costs remain a significant barrier, particularly for developing nations that stand to benefit most from clean energy transitions."`,
-    options: [
-      { id: "uphold", label: "Uphold the complaint", description: "The AI fundamentally changed Morgan's work" },
-      { id: "dismiss", label: "Dismiss the complaint", description: "AI as accessibility tool is legitimate" },
-      {
-        id: "accommodate",
-        label: "Create accommodation policy",
-        description: "Develop formal guidelines for AI as assistive technology",
-      },
-    ],
-    outcomes: [
-      {
-        optionId: "uphold",
-        title: "Accessibility Denied",
-        description:
-          "Morgan was found in violation of academic integrity. They appealed, arguing that the AI served the same function as speech-to-text software or a human scribe. The case highlighted how disability accommodations haven't kept pace with technology.",
-        consequence:
-          "Morgan's academic record was marked, and they stopped using the tool that helped them communicate their ideas effectively.",
-        ethicalReflection:
-          "Where is the line between assistance and authorship? If a human editor made the same improvements, would we consider it cheating?",
-      },
-      {
-        optionId: "dismiss",
-        title: "Precedent Set",
-        description:
-          "The complaint was dismissed, setting an informal precedent. Other students began claiming AI use as an accessibility need, making it difficult to enforce any AI restrictions. The disability services office was overwhelmed with new accommodation requests.",
-        consequence:
-          "While protecting Morgan, the decision created a loophole that blurred the line between accommodation and general AI use.",
-        ethicalReflection:
-          "How do we protect legitimate accessibility needs without creating policies that can be exploited? Can we even make that distinction fairly?",
-      },
-      {
-        optionId: "accommodate",
-        title: "Policy Innovation",
-        description:
-          "The university formed a task force including disability services, faculty, and students to develop clear guidelines. Morgan's case became the catalyst for a nuanced AI accommodation policy.",
-        consequence:
-          "The process took months, leaving current cases in limbo. But it ultimately produced a framework that other institutions adopted.",
-        ethicalReflection:
-          "Systemic change is slow but necessary. How do we support individual students while building institutional frameworks that don't yet exist?",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "The Reference Letter",
-    description:
-      "Dr. Patel needs to write 15 reference letters in one week. Overwhelmed, they use AI to draft letters based on bullet points about each student. One student, Kai, discovers that their 'personalized' letter contains a paragraph identical to another student's letter, the AI recycled the same praise.",
-    excerpt: `"It is with great enthusiasm that I recommend [Student Name] for your program. In my 15 years of teaching, I have rarely encountered a student who demonstrates such a remarkable combination of intellectual curiosity, analytical rigor, and collaborative spirit. Their contributions to class discussions consistently elevated the learning experience for all participants..."`,
-    options: [
-      { id: "confront", label: "Confront Dr. Patel", description: "Ask the professor about the duplicate language" },
-      { id: "accept", label: "Accept the letter", description: "A recommendation is a recommendation" },
-      { id: "request", label: "Request a revision", description: "Ask for a more personalized letter" },
-    ],
-    outcomes: [
-      {
-        optionId: "confront",
-        title: "Uncomfortable Truth",
-        description:
-          "Dr. Patel admitted to using AI and apologized. However, the confrontation strained their relationship, and Dr. Patel became defensive, arguing that the core assessments in the letters were genuine even if the prose was AI-generated.",
-        consequence:
-          "Kai got a revised letter but lost a potential mentor. Other students who received similar letters never knew.",
-        ethicalReflection:
-          "If professors use AI for administrative tasks like letters, does it devalue the recommendation system? Or is it a pragmatic response to unsustainable workloads?",
-      },
-      {
-        optionId: "accept",
-        title: "Silent Compromise",
-        description:
-          "Kai submitted the letter and was accepted to the program. They never knew if the acceptance was despite or because of the generic letter. The doubt lingered throughout their time in the program.",
-        consequence:
-          "The recommendation system continued functioning but with eroded authenticity that neither party acknowledged.",
-        ethicalReflection:
-          "When everyone uses AI, does the entire system of personal recommendations become performative? What would a more honest system look like?",
-      },
-      {
-        optionId: "request",
-        title: "Respectful Revision",
-        description:
-          "Kai diplomatically asked if the letter could include more specific examples from their research project together. Dr. Patel appreciated the reminder and revised the letter with genuine personal details.",
-        consequence:
-          "The revised letter was stronger and more authentic. Dr. Patel began keeping better notes on students to avoid over-reliance on AI for future letters.",
-        ethicalReflection:
-          "Students advocating for themselves can improve outcomes, but should they need to? What systems should be in place to ensure recommendations are meaningful?",
-      },
-    ],
-  },
+Morgan's submitted paragraph: "Renewable energy is a key investment in our shared future. Solar and wind show strong potential, but high upfront costs remain a barrier, especially for developing countries that could benefit the most from clean energy."`,
+  options: [
+    { id: "uphold", label: "Uphold the complaint", description: "The AI changed the work too much" },
+    { id: "dismiss", label: "Dismiss the complaint", description: "AI as an accessibility tool is valid" },
+    {
+      id: "accommodate",
+      label: "Create accommodation policy",
+      description: "Set clear rules for AI as assistive technology",
+    },
+  ],
+  outcomes: [
+    {
+      optionId: "uphold",
+      title: "Accessibility Denied",
+      description:
+        "Morgan is found in violation of academic integrity. They appeal, arguing the AI plays a similar role to speech-to-text or a human scribe. The case exposes how disability support hasn’t kept up with new technology.",
+      consequence:
+        "Morgan’s record is affected, and they stop using the tool that helped them express their ideas clearly.",
+      ethicalReflection:
+        "Where do we draw the line between support and authorship? If a human editor made the same changes, would we call it cheating?",
+    },
+    {
+      optionId: "dismiss",
+      title: "Precedent Set",
+      description:
+        "The complaint is dismissed, which sets an informal precedent. Other students start claiming AI use as an accessibility need, making rules harder to enforce. The disability services office sees a surge in requests.",
+      consequence:
+        "Morgan is protected, but the decision makes it harder to tell the difference between real accommodations and general AI use.",
+      ethicalReflection:
+        "How do we support real accessibility needs without opening the door to misuse? Is it even possible to draw that line fairly?",
+    },
+    {
+      optionId: "accommodate",
+      title: "Policy Innovation",
+      description:
+        "The university creates a task force with faculty, students, and disability services to build clear guidelines. Morgan’s case becomes the starting point for a more thoughtful policy.",
+      consequence:
+        "It takes time, and current cases are left uncertain. But it leads to a framework that other schools begin to use.",
+      ethicalReflection:
+        "Big changes take time. How do we support students now while building better systems for the future?",
+    },
+  ],
+},
+{
+  id: 5,
+  title: "The Reference Letter",
+  description:
+    "Dr. Patel has to write 15 reference letters in one week. Feeling overwhelmed, they use AI to draft them based on bullet points for each student. One student, Kai, notices that their ‘personalized’ letter includes a paragraph that’s identical to another student’s. The AI reused the same praise.",
+  excerpt: `"I am pleased to recommend [Student Name] for your program. In my 15 years of teaching, I have rarely seen a student with such strong curiosity, analytical thinking, and teamwork. Their contributions in class consistently improved discussions for everyone..."`,
+  options: [
+    { id: "confront", label: "Confront Dr. Patel", description: "Ask about the repeated language" },
+    { id: "accept", label: "Accept the letter", description: "Use it as is" },
+    { id: "request", label: "Request a revision", description: "Ask for a more personal version" },
+  ],
+  outcomes: [
+    {
+      optionId: "confront",
+      title: "Uncomfortable Truth",
+      description:
+        "Dr. Patel admits using AI and apologizes. The conversation becomes tense, with Dr. Patel arguing that the core evaluation is still honest, even if the wording was generated.",
+      consequence:
+        "Kai gets a revised letter but the relationship becomes strained. Other students with similar letters never realize it.",
+      ethicalReflection:
+        "If professors use AI for tasks like reference letters, does it weaken their value? Or is it just a practical response to heavy workloads?",
+    },
+    {
+      optionId: "accept",
+      title: "Silent Compromise",
+      description:
+        "Kai submits the letter and gets accepted. But they’re left wondering if the generic wording helped or hurt their chances. That doubt stays with them.",
+      consequence:
+        "The system keeps working, but the sense of authenticity fades and no one addresses it.",
+      ethicalReflection:
+        "If everyone uses AI, do recommendation letters lose their meaning? What would a more honest system look like?",
+    },
+    {
+      optionId: "request",
+      title: "Respectful Revision",
+      description:
+        "Kai politely asks for more specific examples from their shared research work. Dr. Patel takes the feedback well and updates the letter with real details.",
+      consequence:
+        "The new letter is stronger and feels genuine. Dr. Patel also starts keeping better notes to rely less on AI in the future.",
+      ethicalReflection:
+        "Speaking up can help, but should students have to do that? What should be in place to make sure recommendations are actually personal?",
+    },
+  ],
+},
 ];
