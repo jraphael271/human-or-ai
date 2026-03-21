@@ -134,7 +134,7 @@ export default function Game() {
               Ethics Lab Simulation
             </div>
             <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-              Human <span className="text-primary">or</span> AI?
+              Spot the <span className="text-primary">Bot</span>: The AI Authorship Dilemma
             </h1>
             <p className="text-xl text-muted-foreground">Can you actually tell the difference?</p>
             <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
