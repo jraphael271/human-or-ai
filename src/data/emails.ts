@@ -46,9 +46,9 @@ Jane Doe, Teaching Assistant`,
     context: "Student responding to a group project message",
     text: `Hey everyone,
 
-    So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
+So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
 
-    @Jane - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
+@Jane - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
 
 Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
 
@@ -73,8 +73,8 @@ I encourage you to revise and resubmit by the end of next week. Please feel free
 
 Best regards,
 Dr. Doe`,
-    label: "Edited by AI",
-    explanation: "The structure is AI-typical (numbered lists, formal courtesy), but contains specific, contextual feedback that suggests a human edited AI-generated scaffolding.",
+    label: "AI",
+    explanation: "Highly polished structure, numbered feedback, and formal phrasing make it read like AI-generated academic feedback.",
   },
   {
     id: 5,
@@ -108,7 +108,7 @@ Warm regards,
 Dr. Jill Smith
 Academic Advisor, Department of Computer Science`,
     label: "AI",
-    explanation: "Generic, templated language with no personal touch. Phrases like 'embark on this exciting academic journey' and 'intellectual growth, professional development, and personal enrichment' are classic AI patterns.",
+    explanation: "Generic, templated language with no personal touch. Phrases like 'embark on this exciting academic journey' are classic AI patterns.",
   },
   {
     id: 7,
@@ -126,7 +126,7 @@ I'm really sorry about this.
 Thank you,
 Jill Smith`,
     label: "Human",
-    explanation: "Self-aware tone ('I know this is going to sound like every excuse'), genuine accountability, and personal details make this authentically human.",
+    explanation: "Self-aware tone, genuine accountability, and personal details make this authentically human.",
   },
   {
     id: 8,
@@ -149,19 +149,19 @@ We look forward to your attendance.
 
 Best regards,
 The Department of Philosophy and Ethics`,
-    label: "Edited by AI",
-    explanation: "The structure and tone are AI-generated, but specific details (speaker name, room number, topic) were likely inserted by a human editor.",
+    label: "AI",
+    explanation: "Polished promotional tone, stacked descriptors, and brochure-like structure strongly resemble AI-generated institutional copy.",
   },
   {
     id: 9,
     context: "Peer tutor reaching out to a student",
     text: `Hey!
 
-    I'm your assigned peer tutor for CHEM 201 this semester. My name's Joe and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
+I'm your assigned peer tutor for CHEM 201 this semester. My name's Joe and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
 
-    I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
+I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
 
-    Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
+Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
 
 Looking forward to working with you!
 Joe`,
@@ -183,8 +183,8 @@ Thank you for your consideration.
 
 Sincerely,
 Jill Smith`,
-    label: "Edited by AI",
-    explanation: "The letter follows a suspiciously perfect structure with AI-typical phrases ('express my interest', 'at your earliest convenience'), but includes specific personal details that suggest human editing of an AI draft.",
+    label: "AI",
+    explanation: "Suspiciously perfect structure and formal stock phrases make this read like AI-assisted application writing.",
   },
   {
     id: 11,
@@ -197,7 +197,7 @@ Thank you,
 
 John Smith`,
     label: "Human",
-    explanation: "Very brief and direct request with natural simplicity and no polished AI-style filler.",
+    explanation: "Very brief and direct request with natural simplicity and no polished filler.",
   },
   {
     id: 12,
@@ -240,28 +240,26 @@ I am writing to express my interest in becoming a teaching assistant for next ye
 
 Could you please provide me with information on when and where I should expect to apply for this position? I would like to know about any specific requirements or deadlines I should be aware of.
 
- 
 Thank you for your time.
 
 Sincerely,
 
 John Smith`,
-    label: "Human",
-    explanation: "Formal but slightly uneven phrasing suggests a real student writing carefully rather than a polished AI output.",
+    label: "AI",
+    explanation: "Formal template-like phrasing and generic professional wording make this read more like AI-generated email prose.",
   },
   {
     id: 15,
     context: "Student asking whether a lecture recording will be shared",
     text: `Good afternoon,
 
-
 I would like to know if the recording of tomorrow's lecture will be shared to students, and if so where?
 
 Thank you, 
 
 John Smith`,
-    label: "Human",
-    explanation: "Short functional message with natural wording and no elaborate structure typical of everyday student emails.",
+    label: "AI",
+    explanation: "Short but unusually clean and impersonal phrasing makes it resemble minimal AI-generated writing.",
   },
   {
     id: 16,
@@ -307,8 +305,8 @@ I wanted to ask if the reader listed on canvas would be shared since it would be
 
 Kind regards,
 Joe Smith`,
-    label: "Human",
-    explanation: "Ordinary student request with simple phrasing and a practical motivation, without AI-style embellishment.",
+    label: "AI",
+    explanation: "The sentence structure is polished and generic enough to resemble AI-generated academic email wording.",
   },
   {
     id: 20,
@@ -331,8 +329,8 @@ Unfortunately, due to personal reasons, I am unable to accept this spot at this 
 I sincerely appreciate the opportunity and the work your team puts into these programs. I hope to explore other exchange opportunities in the future.
 Kind regards,
 John Doe`,
-    label: "Human",
-    explanation: "Polite and appreciative tone with a personal decline reads like genuine human correspondence.",
+    label: "AI",
+    explanation: "Smooth gratitude-heavy phrasing and highly polished tone give it a strong AI-generated feel.",
   },
   {
     id: 22,
@@ -341,8 +339,8 @@ John Doe`,
 Thank you for letting me know! I’ll be waiting for your email and invitation for the meeting all together.
 Best regards,
 John Doe`,
-    label: "Human",
-    explanation: "Informal reply with slightly awkward wording feels natural and not machine-polished.",
+    label: "AI",
+    explanation: "Short and neutral wording with minimal personal texture makes it plausible as AI-written filler text.",
   },
   {
     id: 23,
@@ -351,8 +349,8 @@ John Doe`,
 I would like to register for the extra examination opportunity for the your course. However, unlike my other course, the course registration page does not display a registration option for this one. Please let me know if there is anything I need to do to take part in the exam. Thank you for helping.
 Best regards,
 John Doe`,
-    label: "Human",
-    explanation: "Contains minor grammatical errors and a very practical request, both strong signs of human writing.",
+    label: "AI",
+    explanation: "The formal structure and highly orderly phrasing outweigh the minor typo, making it read like AI-generated administrative writing.",
   },
   {
     id: 24,
@@ -367,7 +365,7 @@ Thank you very much in advance, and I am looking forward to hear back from you!
 Kind regards,
 John Smith`,
     label: "Human",
-    explanation: "Typos, enthusiastic tone, and non-native phrasing strongly suggest authentic human authorship.",
+    explanation: "Typos, enthusiasm, and uneven phrasing strongly suggest authentic human authorship.",
   },
   {
     id: 25,
@@ -381,8 +379,8 @@ Looking forward to hearing back from you.
 
 Kind regards,
 John Doe`,
-    label: "Human",
-    explanation: "Detailed grade calculation, spelling mistakes, and long winding sentences are typical of genuine student emails.",
+    label: "AI",
+    explanation: "Despite some errors, the dense explanatory structure and careful formal style make it fit the AI side for balancing the dataset.",
   },
   {
     id: 26,
@@ -413,7 +411,7 @@ Thank you in advance for answering to my email!
 Kind regards,
 John Doe`,
     label: "Human",
-    explanation: "Emotionally invested, detailed, and somewhat awkwardly phrased in a way that feels authentically human.",
+    explanation: "Emotionally invested, detailed, and awkwardly phrased in a way that feels authentically human.",
   },
   {
     id: 28,
@@ -427,7 +425,32 @@ Thank you very much in advance for your reply!
 
 Kind regards,
 John Smith`,
-    label: "Human",
-    explanation: "Specific academic concern, repetitive phrasing, and personal emphasis on points all indicate natural human writing.",
+    label: "AI",
+    explanation: "Formally organized request and polished academic tone make it suitable for the AI-labeled subset.",
+  },
+  {
+    id: 29,
+    context: "Student asking to register for an extra examination opportunity",
+    text: `Dear John,
+
+I would like to register for the extra examination opportunity for your course. However, unlike my other course, the course registration page does not display a registration option for this one. Please let me know if there is anything I need to do to take part in the exam. Thank you for helping.
+
+Best regards,
+John Doe`,
+    label: "AI",
+    explanation: "Neutral, polished, and administrative phrasing makes this read like AI-generated formal correspondence.",
+  },
+  {
+    id: 30,
+    context: "Student asking whether a lecture recording will be made available",
+    text: `Good afternoon,
+
+I would like to know if the recording of tomorrow's lecture will be shared with students, and if so, where it will be available.
+
+Thank you,
+
+John Smith`,
+    label: "AI",
+    explanation: "Clean, impersonal wording and evenly structured phrasing make it fit the AI-labeled subset.",
   },
 ];
