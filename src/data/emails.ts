@@ -11,22 +11,6 @@ export interface Email {
 export const emails: Email[] = [
   {
     id: 1,
-    context: "Student emailing a professor about a deadline extension",
-    text: `Hi Professor Doe,
-
-I hope this email finds you well. I'm writing to request a short extension on the research paper due this Friday. I've been dealing with some personal issues this week that have made it difficult to focus, and I want to make sure I submit work that meets the standard you expect.
-
-Would it be possible to have until Monday? I already have a solid outline and most of my sources gathered - I just need a couple more days to pull it all together properly.
-
-Thank you for your understanding.
-
-Best,
-Joe`,
-    label: "Human",
-    explanation: "Natural tone with personal context, minor imperfections in structure, and authentic voice typical of student communication.",
-  },
-  {
-    id: 2,
     context: "Teaching assistant announcing office hours change",
     text: `Dear Students,
 
@@ -39,25 +23,10 @@ I appreciate your understanding and flexibility regarding this matter.
 Sincerely,
 Jane Doe, Teaching Assistant`,
     label: "AI",
-    explanation: "Overly formal language, rigid structure, and phrases like 'I am writing to inform you' and 'do not hesitate' are hallmarks of AI-generated text.",
+    explanation: "Overly formal language, rigid structure, and phrases like 'I am writing to inform you' and 'do not hesitate' are typical AI cues.",
   },
   {
-    id: 3,
-    context: "Student responding to a group project message",
-    text: `Hey everyone,
-
-So I looked over the slides from last night and honestly they're looking pretty good! I made a few tweaks to the intro section - nothing major, just tightened up some of the wording. Also moved the methodology graph to slide 4 because it flows better after the literature review.
-
-@Jane - can you double-check the citation on slide 7? I think we might be referencing the wrong year for that WHO report.
-
-Let's try to finalize everything by tomorrow night so we're not scrambling before the presentation. Sound good?
-
-- Jill`,
-    label: "Human",
-    explanation: "Casual tone, direct references to specific details, @-mentions, and natural conversational flow indicate genuine human writing.",
-  },
-  {
-    id: 4,
+    id: 2,
     context: "Professor providing feedback on a draft essay",
     text: `Dear Student,
 
@@ -73,28 +42,11 @@ I encourage you to revise and resubmit by the end of next week. Please feel free
 
 Best regards,
 Dr. Doe`,
-    label: "AI",
-    explanation: "Highly polished structure, numbered feedback, and formal phrasing make it read like AI-generated academic feedback.",
+    label: "Edited by AI",
+    explanation: "The polished structure feels AI-generated, but the specific comments suggest human editing.",
   },
   {
-    id: 5,
-    context: "Student complaint email to university administration",
-    text: `To whom it may concern,
-
-I'm writing because I've had a really frustrating experience with the financial aid office this semester. I submitted my FAFSA back in February and was told my package would be ready by April. It's now May and I still haven't received anything concrete - just vague emails saying it's "being processed."
-
-I've called three times and visited in person twice. Each time I get a different answer. Meanwhile, my tuition payment deadline is in two weeks and I genuinely don't know how I'm supposed to pay.
-
-I'm not trying to be difficult, but I need someone to actually look into this and give me a clear answer. This has been incredibly stressful and it's affecting my ability to focus on my coursework.
-
-Thank you,
-Jill Smith
-Student ID: 2023-44891`,
-    label: "Human",
-    explanation: "Emotional authenticity, specific details about personal experience, and natural frustration make this clearly human-written.",
-  },
-  {
-    id: 6,
+    id: 3,
     context: "Academic advisor sending a welcome email to new students",
     text: `Dear Incoming Students,
 
@@ -108,28 +60,10 @@ Warm regards,
 Dr. Jill Smith
 Academic Advisor, Department of Computer Science`,
     label: "AI",
-    explanation: "Generic, templated language with no personal touch. Phrases like 'embark on this exciting academic journey' are classic AI patterns.",
+    explanation: "Generic, highly polished, and motivational phrasing makes this sound AI-written.",
   },
   {
-    id: 7,
-    context: "Student emailing about a missed exam",
-    text: `Professor Doe,
-
-I know this is going to sound like every excuse you've ever heard, but I genuinely overslept this morning and missed the midterm. My alarm didn't go off - I think my phone died overnight because I forgot to plug it in.
-
-I completely understand if there's nothing you can do about this, and I take full responsibility. But if there's any possibility of a makeup exam or alternative assessment, I would be incredibly grateful. I've attended every class this semester and my assignment grades reflect that I've been keeping up with the material.
-
-I'm available to take the exam at any time that works for you, including evenings or weekends. I can also provide any documentation you might need.
-
-I'm really sorry about this.
-
-Thank you,
-Jill Smith`,
-    label: "Human",
-    explanation: "Self-aware tone, genuine accountability, and personal details make this authentically human.",
-  },
-  {
-    id: 8,
+    id: 4,
     context: "Department newsletter about an upcoming guest lecture",
     text: `Dear Members of the University Community,
 
@@ -149,27 +83,11 @@ We look forward to your attendance.
 
 Best regards,
 The Department of Philosophy and Ethics`,
-    label: "AI",
-    explanation: "Polished promotional tone, stacked descriptors, and brochure-like structure strongly resemble AI-generated institutional copy.",
+    label: "Edited by AI",
+    explanation: "The wording is highly templated, but the inserted event details suggest human revision.",
   },
   {
-    id: 9,
-    context: "Peer tutor reaching out to a student",
-    text: `Hey!
-
-I'm your assigned peer tutor for CHEM 201 this semester. My name's Joe and I'm a third-year chem major. I saw from the sign-up sheet that you're looking for help with organic chemistry - honestly same, orgo almost broke me last year lol.
-
-I usually hold sessions in the library study rooms on Tuesdays around 6pm, but I'm flexible if that doesn't work for you. We can also do virtual if that's easier.
-
-Just shoot me a text or reply here and we can figure out a time. No pressure, no judgment - everyone struggles with chair conformations at first 😅
-
-Looking forward to working with you!
-Joe`,
-    label: "Human",
-    explanation: "Informal language, humor, emoji use, self-deprecation, and casual scheduling indicate natural human communication.",
-  },
-  {
-    id: 10,
+    id: 5,
     context: "Cover letter for a research assistant position",
     text: `Dear Dr. Doe,
 
@@ -183,12 +101,13 @@ Thank you for your consideration.
 
 Sincerely,
 Jill Smith`,
-    label: "AI",
-    explanation: "Suspiciously perfect structure and formal stock phrases make this read like AI-assisted application writing.",
+    label: "Edited by AI",
+    explanation: "The structure is very polished and AI-like, but the concrete background details suggest human customization.",
   },
+
   {
-    id: 11,
-    context: "Student asking for lecture slides to be published",
+    id: 6,
+    context: "Student asking for lecture slides",
     text: `Dear Dr. Doe,
 
 Could you please publish the slides for lecture 5?
@@ -197,11 +116,11 @@ Thank you,
 
 John Smith`,
     label: "Human",
-    explanation: "Very brief and direct request with natural simplicity and no polished filler.",
+    explanation: "Short, direct, and slightly plain phrasing feels like a real student email rather than generated text.",
   },
   {
-    id: 12,
-    context: "Student asking about a possible grade increase on an assignment",
+    id: 7,
+    context: "Student asking about increasing an assignment grade",
     text: `Good afternoon Professor Doe,
 
 I hope you are doing well. I would like to ask for your opinion on possibly increasing my grade for Assignment 1.
@@ -216,11 +135,11 @@ Best Regards,
 
 Joe Smith`,
     label: "Human",
-    explanation: "Specific reference to grading details and slightly awkward phrasing reflect authentic student writing.",
+    explanation: "The wording is specific and slightly awkward in a natural way, which is common in genuine student emails.",
   },
   {
-    id: 13,
-    context: "Student following up on a missing assignment grade",
+    id: 8,
+    context: "Student asking about a missing assignment grade",
     text: `Dear Jane,
 
 Professor Doe mentioned that all the assignments should have been graded by now, however I do not see my grade for the latest assignment. Could you please let me know if our assignment was properly submitted and will receive a grade. Thank you.
@@ -229,10 +148,10 @@ Best Regards,
 
 Joe Smith`,
     label: "Human",
-    explanation: "Concrete academic context, minor grammatical roughness, and straightforward wording make it feel genuinely human.",
+    explanation: "The message is practical, specific, and not overly polished, which fits natural human writing.",
   },
   {
-    id: 14,
+    id: 9,
     context: "Student expressing interest in becoming a teaching assistant",
     text: `Good evening Mr. Doe,
  
@@ -240,30 +159,32 @@ I am writing to express my interest in becoming a teaching assistant for next ye
 
 Could you please provide me with information on when and where I should expect to apply for this position? I would like to know about any specific requirements or deadlines I should be aware of.
 
+ 
 Thank you for your time.
 
 Sincerely,
 
 John Smith`,
-    label: "AI",
-    explanation: "Formal template-like phrasing and generic professional wording make this read more like AI-generated email prose.",
+    label: "Human",
+    explanation: "Although formal, it has a realistic student tone and straightforward wording typical of a real inquiry.",
   },
   {
-    id: 15,
+    id: 10,
     context: "Student asking whether a lecture recording will be shared",
     text: `Good afternoon,
+
 
 I would like to know if the recording of tomorrow's lecture will be shared to students, and if so where?
 
 Thank you, 
 
 John Smith`,
-    label: "AI",
-    explanation: "Short but unusually clean and impersonal phrasing makes it resemble minimal AI-generated writing.",
+    label: "Human",
+    explanation: "Brief, functional, and slightly imperfect phrasing makes this feel naturally human.",
   },
   {
-    id: 16,
-    context: "Student requesting an extension after a group member dropped the course",
+    id: 11,
+    context: "Student requesting an extension for a group assignment",
     text: `Dear Professor John,
 
 I wanted to ask if it would be possible to get an extension for assignment 2 since one of our group members informed us yesterday that he is not participating in the course anymore. There are only 2 people in our group now and it would be great if we can have more time to complete the assignment. We should be able to complete it before Thursday. Please let me know if this is possible, thanks in advance!
@@ -271,11 +192,11 @@ I wanted to ask if it would be possible to get an extension for assignment 2 sin
 Kind regards,
 Joe Smith`,
     label: "Human",
-    explanation: "Specific situational detail and practical justification give it an authentic, human-written feel.",
+    explanation: "It contains concrete context, a plausible reason, and informal phrasing that feels authentic.",
   },
   {
-    id: 17,
-    context: "Student following up about an incorrect exam attendance grade",
+    id: 12,
+    context: "Student following up about an incorrect exam attendance record",
     text: `Dear Prof. Doe,
 
 I am emailing to ask about the wrong grade input since the system shows that I was not present at the exam even though I was and have got a grade for it. I have emailed about this issue last week and haven’t got a response so I wanted to check up on this again. Please let me know if this issue will be resolved soon.
@@ -283,34 +204,34 @@ I am emailing to ask about the wrong grade input since the system shows that I w
 Kind regards,
 John Smith`,
     label: "Human",
-    explanation: "Realistic administrative issue, mild frustration, and imperfect phrasing point to genuine human authorship.",
+    explanation: "The wording is a bit clunky and repetitive in a realistic way, which strongly suggests human authorship.",
   },
   {
-    id: 18,
-    context: "Student informing a teaching assistant they are sick and absent from class",
+    id: 13,
+    context: "Student notifying a teaching assistant about being sick",
     text: `Dear Jane,
 
 Unfortunately I won’t be able to make it to class today because I am sick, sorry about that!
 
 John Smith`,
     label: "Human",
-    explanation: "Very casual and concise with natural apology, typical of a quick human absence note.",
+    explanation: "Very brief and natural; the apology and simplicity feel genuinely human.",
   },
   {
-    id: 19,
-    context: "Student asking whether a listed course reader will be shared",
+    id: 14,
+    context: "Student asking if a reader will be shared",
     text: `Dear Professor Scott,
 
 I wanted to ask if the reader listed on canvas would be shared since it would be helpful to have other materials to study with other than the lecture slides. Please let me know.
 
 Kind regards,
 Joe Smith`,
-    label: "AI",
-    explanation: "The sentence structure is polished and generic enough to resemble AI-generated academic email wording.",
+    label: "Human",
+    explanation: "The message has a realistic student concern and an unpolished but natural flow.",
   },
   {
-    id: 20,
-    context: "Student asking to discuss a bachelor thesis project",
+    id: 15,
+    context: "Student asking for a thesis project meeting",
     text: `Dear Jane,
 
 My name is John and I am a 3rd year AI bachelor student. I am interested in doing the ‘Epistemic Logic in Fault Diagnosis’ for my thesis project since I’ve taken a Formal Logic course last December and would like to explore how it can be used in a practical setting in AI applications. Would it be possible to have a meeting to discuss more about the project? Please let me know.
@@ -318,43 +239,43 @@ My name is John and I am a 3rd year AI bachelor student. I am interested in doin
 Kind regards,
 John Smith`,
     label: "Human",
-    explanation: "Personal academic background, specific project interest, and slightly clunky phrasing make it sound naturally human.",
+    explanation: "Specific motivation and mildly awkward phrasing are strong indicators of a real human email.",
   },
   {
-    id: 21,
-    context: "Student declining a nominated summer school exchange opportunity",
+    id: 16,
+    context: "Student declining a summer school exchange nomination",
     text: `Dear Jane,
 Thank you so much for selecting me and for taking the time to reach out. I'm truly honored to have been nominated for the summer school exchange at a partner university abroad.
 Unfortunately, due to personal reasons, I am unable to accept this spot at this time. I hope it can be offered to another deserving candidate.
 I sincerely appreciate the opportunity and the work your team puts into these programs. I hope to explore other exchange opportunities in the future.
 Kind regards,
 John Doe`,
-    label: "AI",
-    explanation: "Smooth gratitude-heavy phrasing and highly polished tone give it a strong AI-generated feel.",
+    label: "Human",
+    explanation: "The tone is warm and personal, and the message feels like a genuine response to a real opportunity.",
   },
   {
-    id: 22,
-    context: "Student replying to confirm they will wait for a meeting invitation",
+    id: 17,
+    context: "Student replying about a meeting invitation",
     text: `Hi John,
 Thank you for letting me know! I’ll be waiting for your email and invitation for the meeting all together.
 Best regards,
 John Doe`,
-    label: "AI",
-    explanation: "Short and neutral wording with minimal personal texture makes it plausible as AI-written filler text.",
+    label: "Human",
+    explanation: "Short, informal, and slightly awkward phrasing makes this read like a real person writing quickly.",
   },
   {
-    id: 23,
+    id: 18,
     context: "Student asking how to register for an extra exam opportunity",
     text: `Dear John,
 I would like to register for the extra examination opportunity for the your course. However, unlike my other course, the course registration page does not display a registration option for this one. Please let me know if there is anything I need to do to take part in the exam. Thank you for helping.
 Best regards,
 John Doe`,
-    label: "AI",
-    explanation: "The formal structure and highly orderly phrasing outweigh the minor typo, making it read like AI-generated administrative writing.",
+    label: "Human",
+    explanation: "The typo and straightforward explanation are strong signs of authentic human writing.",
   },
   {
-    id: 24,
-    context: "Student seeking supervision for a self-chosen bachelor thesis topic",
+    id: 19,
+    context: "Student asking a professor to supervise a bachelor thesis topic",
     text: `Dear Prof. Doe,
 
 I would like to do Bachelor Thesis research project about Automated Power Systems and Power Automation Algoritms. As it is a self-chosen topic, I do need to find a supervisor and I believe, based on your past researches, that you would be a great specialist in this topic!
@@ -365,10 +286,10 @@ Thank you very much in advance, and I am looking forward to hear back from you!
 Kind regards,
 John Smith`,
     label: "Human",
-    explanation: "Typos, enthusiasm, and uneven phrasing strongly suggest authentic human authorship.",
+    explanation: "Typos and slightly unusual wording make this feel strongly human rather than machine-produced.",
   },
   {
-    id: 25,
+    id: 20,
     context: "Student asking about a missing partial grade transfer",
     text: `Dear Prof. Smith,
 
@@ -379,78 +300,230 @@ Looking forward to hearing back from you.
 
 Kind regards,
 John Doe`,
+    label: "Human",
+    explanation: "The email is detailed, slightly repetitive, and imperfectly phrased in a very human way.",
+  },
+
+  {
+    id: 21,
+    context: "Registrar announcing transcript processing times",
+    text: `Dear Students,
+
+Please be advised that official transcript requests submitted after March 15 will require up to ten business days for processing. This temporary adjustment reflects an increase in seasonal request volume and is intended to ensure accurate and timely fulfillment of all orders.
+
+Students with urgent academic or professional deadlines are encouraged to indicate this in the request form so that appropriate consideration may be given where possible.
+
+We appreciate your patience and understanding.
+
+Sincerely,
+Office of the Registrar`,
     label: "AI",
-    explanation: "Despite some errors, the dense explanatory structure and careful formal style make it fit the AI side for balancing the dataset.",
+    explanation: "Highly polished institutional tone, generic wording, and formulaic structure are characteristic of AI text.",
+  },
+  {
+    id: 22,
+    context: "Library notifying students about extended exam-week hours",
+    text: `Dear Students,
+
+In support of final examination preparation, the university library will operate on extended hours beginning next Monday. During this period, the building will remain open until midnight from Monday through Friday and until 10:00 PM on weekends.
+
+We encourage all students to make use of the designated quiet study areas, reservable group rooms, and on-site academic support services available throughout the week.
+
+Best wishes for a productive study period.
+
+Kind regards,
+University Library Services`,
+    label: "AI",
+    explanation: "This reads like a polished generic announcement with no human quirks or personalization.",
+  },
+  {
+    id: 23,
+    context: "Professor reminding students about plagiarism policy",
+    text: `Dear Class,
+
+This message serves as a reminder that all submitted coursework must comply with the university's academic integrity policy. Any form of plagiarism, unauthorized collaboration, or misuse of external tools may result in disciplinary consequences.
+
+Please ensure that your submissions accurately reflect your own work and that all external sources are cited appropriately. If you are uncertain about what constitutes acceptable use, I encourage you to consult the course handbook before submitting your assignment.
+
+Best regards,
+Professor Doe`,
+    label: "AI",
+    explanation: "The wording is formal, balanced, and impersonal in a way that strongly suggests AI generation.",
+  },
+  {
+    id: 24,
+    context: "Department announcing a workshop on academic writing",
+    text: `Dear Students,
+
+We are pleased to share that the department will be hosting a workshop on effective academic writing next Wednesday afternoon. The session will cover argument structure, citation practices, editing strategies, and common mistakes observed in student essays.
+
+Attendance is optional but strongly recommended, particularly for those preparing major written assignments this semester.
+
+Further details will be circulated shortly.
+
+Sincerely,
+Department Administration`,
+    label: "AI",
+    explanation: "The email uses smooth but generic institutional phrasing and lacks specific natural detail.",
+  },
+  {
+    id: 25,
+    context: "Course coordinator announcing a new discussion section",
+    text: `Dear Students,
+
+To provide additional support in advance of the midterm examination, an extra discussion section will be offered on Friday at 1:00 PM in Room B204. This session will include a review of core concepts, sample questions, and time for student questions.
+
+Students are welcome to attend regardless of their assigned tutorial group.
+
+Warm regards,
+Course Coordination Team`,
+    label: "AI",
+    explanation: "The efficient, neatly structured language feels generated and not like a spontaneous human email.",
   },
   {
     id: 26,
-    context: "Student asking about eligibility for an extra exam date after severe winter travel disruption",
-    text: `Dear Prof. Doe,
-I live in Utrecht, and I was one of the students that in January could not attend the resit exam, because of the extreme winter conditions in the Netherlands. Unfortunately, I don't have a car, therefore I am always fully dependent on the public transportation. All the trains to Amsterdam were cancelled, and there was no working alternative transportation or bus that day, therefore I was not able to arrive.
-I informed the examination board in January, but now I don't see any registration for the additional date of the exam, which is coming this week, and I wanted to check if I am still allowed to take the exam, even though I can't see myself in the system, or should I contact some department for registration?
+    context: "IT services announcing scheduled maintenance",
+    text: `Dear University Community,
 
-Thank you very much in advance for your answer!
+Please note that scheduled maintenance will take place on the student portal this Saturday between 6:00 AM and 11:00 AM. During this period, some services may be temporarily unavailable, including course registration, timetable access, and grade viewing.
 
-Kind regards,
-Joe Doe`,
-    label: "Human",
-    explanation: "Personal circumstances, detailed context, and natural over-explanation make this clearly human-written.",
+We apologize for any inconvenience this may cause and thank you for your understanding.
+
+Best regards,
+University IT Services`,
+    label: "AI",
+    explanation: "Generic service-announcement language and very clean structure are typical of AI-generated administrative text.",
   },
   {
     id: 27,
-    context: "Student requesting an exception to the practical-session absence rule due to illness",
-    text: `Dear Prof. Smith,
+    context: "Student success office inviting students to a networking event",
+    text: `Dear Students,
 
-Unfortunately, I have had a very strong fever for the past week, and I am still not healthy this week. Last week, I missed 2 practical sessions because of that, so I already used all of the possible absences, and I don't think I should attend the practical sessions this week too.
-My doctor gave me the official document from him, so I can show it if requested. Also I do still contribute to the project, even when being sick, so I am very kindly asking if there can be an exception from the 2 absence maximum rule for me? I really do need to pass this subject in the current school year, so retaking it next year does not work well for me.
+The Student Success Office is delighted to invite you to an upcoming networking evening designed to connect current students with alumni from a wide range of professional fields. This event offers an excellent opportunity to gain insight into career pathways, ask questions, and build meaningful connections.
 
-I have already had a meeting with the Academic Advisor, and she told me to directly discuss it with you, if my case can be re-evaluated.
+Light refreshments will be provided, and business casual attire is encouraged.
 
-Thank you in advance for answering to my email!
+We hope to see many of you there.
 
-Kind regards,
-John Doe`,
-    label: "Human",
-    explanation: "Emotionally invested, detailed, and awkwardly phrased in a way that feels authentically human.",
+Sincerely,
+Student Success Office`,
+    label: "AI",
+    explanation: "Polished promotional wording and broad generic phrasing are strong AI indicators.",
   },
   {
     id: 28,
-    context: "Student requesting access to inspect a graded exam",
-    text: `Dear Prof. Doe,
+    context: "Faculty office informing students about room changes",
+    text: `Dear Students,
 
-I have not seen any official announcement on Canvas or email about the inspection of the graded exams. However, I just checked my answers with the given solutions, and I believe my grade should be higher than the grade I received on Canvas.
-Is it possible to see my exam, if there is no official inspection, could I please request the copy of my exam please? I would like to go through it and double-check as the grade from this subject is very important for me, and every point counts.
+Please be informed that several classes scheduled in Building C next week have been reassigned to alternative rooms due to maintenance work. Updated room allocations will be visible on the course timetable system by the end of the day.
 
-Thank you very much in advance for your reply!
+Students are encouraged to verify their room locations before attending class to avoid confusion.
 
-Kind regards,
-John Smith`,
+Thank you for your cooperation.
+
+Faculty Office`,
     label: "AI",
-    explanation: "Formally organized request and polished academic tone make it suitable for the AI-labeled subset.",
+    explanation: "This sounds like standard generated admin copy: concise, formal, and impersonal.",
   },
+
   {
     id: 29,
-    context: "Student asking to register for an extra examination opportunity",
+    context: "Professor commenting on a revised project proposal",
     text: `Dear John,
 
-I would like to register for the extra examination opportunity for your course. However, unlike my other course, the course registration page does not display a registration option for this one. Please let me know if there is anything I need to do to take part in the exam. Thank you for helping.
+Thank you for sending the revised version of your proposal. The overall direction is much clearer now, and your research question is significantly better defined than in the earlier draft.
+
+There are still a few points that would benefit from improvement. In particular, I recommend clarifying how you intend to evaluate the success of your method and tightening the final paragraph so that the contribution is easier to identify.
+
+Once those changes are made, I believe the proposal will be in strong shape for submission.
 
 Best regards,
-John Doe`,
-    label: "AI",
-    explanation: "Neutral, polished, and administrative phrasing makes this read like AI-generated formal correspondence.",
+Dr. Smith`,
+    label: "Edited by AI",
+    explanation: "The structure is very polished and balanced, but the comments are specific enough to suggest human editing.",
   },
   {
     id: 30,
-    context: "Student asking whether a lecture recording will be made available",
-    text: `Good afternoon,
+    context: "Supervisor replying to a request for a thesis meeting",
+    text: `Dear John,
 
-I would like to know if the recording of tomorrow's lecture will be shared with students, and if so, where it will be available.
+Thank you for your message and for your interest in the thesis topic. Your background in formal logic sounds relevant, and I agree that the project could offer an interesting practical angle within AI.
 
-Thank you,
+I would be happy to schedule a short meeting to discuss the project further and hear more about your ideas. Please send me a few time slots that work for you next week, and I will do my best to accommodate one of them.
 
-John Smith`,
-    label: "AI",
-    explanation: "Clean, impersonal wording and evenly structured phrasing make it fit the AI-labeled subset.",
+Kind regards,
+Jane Doe`,
+    label: "Edited by AI",
+    explanation: "Smooth phrasing and clean organization suggest AI scaffolding, while the personalized response points to human revision.",
+  },
+  {
+    id: 31,
+    context: "Course staff replying about a registration issue",
+    text: `Dear John,
+
+Thank you for reaching out. I have checked the course registration system, and it appears that the extra examination option has not yet been made visible for all students.
+
+This should be updated shortly. If the option still does not appear by tomorrow afternoon, please send me another message and I will look into it further on your behalf.
+
+Best regards,
+Course Administration`,
+    label: "Edited by AI",
+    explanation: "The email is very clean and template-like, but includes a realistic specific action and follow-up.",
+  },
+  {
+    id: 32,
+    context: "Academic coordinator responding to a missed grade",
+    text: `Dear Joe,
+
+Thank you for your email. I understand your concern regarding the missing grade for the latest assignment.
+
+I will verify whether the submission was properly received in the system and check with the grading team if there has been a delay. You should receive an update as soon as I have more information.
+
+Kind regards,
+Jane Doe`,
+    label: "Edited by AI",
+    explanation: "The tidy structure feels AI-assisted, but the specific issue being addressed suggests human intervention.",
+  },
+  {
+    id: 33,
+    context: "Professor replying to an extension request for a group assignment",
+    text: `Dear Joe,
+
+Thank you for explaining the situation. I understand that the withdrawal of one group member has created additional pressure on the remaining members of your group.
+
+In this case, I am willing to grant a short extension until Thursday, provided that the final submission reflects a complete and coordinated effort from both remaining group members. Please keep me informed if any additional complications arise.
+
+Best regards,
+Professor John`,
+    label: "Edited by AI",
+    explanation: "The response is polished and structured, but it includes contextual judgment that suggests a human-edited draft.",
+  },
+  {
+    id: 34,
+    context: "Department staff replying about lecture recordings",
+    text: `Dear John,
+
+Thank you for your message. Yes, the recording of tomorrow's lecture will be made available to students after the session.
+
+It will be uploaded to the course Canvas page under the lecture materials section. Please note that processing may take a little time, so it may not appear immediately after class has ended.
+
+Best regards,
+Department Assistant`,
+    label: "Edited by AI",
+    explanation: "Very polished and efficient wording suggests AI help, while the practical detail about upload timing feels human-added.",
+  },
+  {
+    id: 35,
+    context: "Professor responding about grade inspection",
+    text: `Dear John,
+
+Thank you for your email. If you believe there may be an issue with the grading, you are welcome to request access to review your exam.
+
+Although no general inspection announcement has been circulated, individual review requests can still be considered. Please send me your student number and availability, and we can determine the most suitable next step.
+
+Kind regards,
+Prof. Doe`,
+    label: "Edited by AI",
+    explanation: "The message is clean and composed like AI-generated text, but the procedural specifics suggest human editing.",
   },
 ];
