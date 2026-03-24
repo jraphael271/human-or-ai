@@ -1,5 +1,4 @@
 import { EmailLabel } from "@/data/emails";
-import { CheckCircle2, XCircle } from "lucide-react";
 
 interface ResultRevealProps {
   correctAnswer: EmailLabel;
@@ -23,28 +22,20 @@ export function ResultReveal({
   const isCorrect = correctAnswer === userChoice;
 
   return (
-    <div className="max-w-xl mx-auto space-y-6 animate-fade-in-scale">
-      <div className="flex justify-center">
-        {isCorrect ? (
-          <CheckCircle2 className="w-16 h-16 text-success" />
-        ) : (
-          <XCircle className="w-16 h-16 text-destructive" />
-        )}
-      </div>
-
-      <h2 className={`text-2xl font-bold text-center ${isCorrect ? "text-success" : "text-destructive"}`}>
-        {isCorrect ? "Correct!" : "Incorrect"}
+    <div className="max-w-xl mx-auto space-y-6">
+      <h2 className="text-2xl font-bold text-center">
+        {isCorrect ? "Correct" : "Incorrect"}
       </h2>
 
       <div className="rounded-lg border bg-card p-6 space-y-4">
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <span className="text-muted-foreground block">Correct Answer</span>
-            <span className="font-semibold text-success">{correctAnswer}</span>
+            <span className="font-semibold">{correctAnswer}</span>
           </div>
           <div>
             <span className="text-muted-foreground block">Your Choice</span>
-            <span className={`font-semibold ${isCorrect ? "text-success" : "text-destructive"}`}>{userChoice}</span>
+            <span className="font-semibold">{userChoice}</span>
           </div>
           <div>
             <span className="text-muted-foreground block">Confidence</span>
@@ -52,7 +43,7 @@ export function ResultReveal({
           </div>
           <div>
             <span className="text-muted-foreground block">Points</span>
-            <span className={`font-semibold font-mono-code ${pointsChange >= 0 ? "text-success" : "text-destructive"}`}>
+            <span className="font-semibold">
               {pointsChange >= 0 ? "+" : ""}{pointsChange}
             </span>
           </div>
@@ -67,7 +58,7 @@ export function ResultReveal({
         onClick={onNext}
         className="w-full rounded-lg bg-primary px-6 py-3 text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
       >
-        {isLastRound ? "Continue to Phase 2" : "Next Email →"}
+        {isLastRound ? "Continue to Phase 2" : "Next Email"}
       </button>
     </div>
   );
