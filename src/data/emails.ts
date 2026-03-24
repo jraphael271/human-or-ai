@@ -70,10 +70,10 @@ Academic Advisor, Department of Computer Science`,
 We are pleased to announce an upcoming guest lecture that promises to be both enlightening and thought-provoking. Dr. Jane Doe, a distinguished researcher in the field of artificial intelligence ethics, will be delivering a lecture entitled "The Moral Machine: Navigating Ethical Dilemmas in AI Development."
 
 Event Details:
-- Date: Thursday, November 14, 2024
-- Time: 4:00 PM - 5:30 PM
-- Location: Harrison Auditorium, Room 201
-- Reception to follow in the Faculty Lounge
+Date: Thursday, November 14, 2024
+Time: 4:00 PM to 5:30 PM
+Location: Harrison Auditorium, Room 201
+Reception to follow in the Faculty Lounge
 
 Dr. Doe's research has been published in numerous prestigious journals and has been recognised with several international awards. Her work focuses on the intersection of technology, philosophy, and public policy.
 
