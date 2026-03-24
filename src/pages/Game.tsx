@@ -150,7 +150,7 @@ export default function Game() {
                 {
                   step: "1",
                   title: "Read the email",
-                  desc: "You'll see a university-related email from students, professors, or staff.",
+                  desc: "You'll see a university related email from students, professors, or staff.",
                 },
                 {
                   step: "2",
