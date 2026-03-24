@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { emails, EmailLabel } from "@/data/emails";
 import { scenarios } from "@/data/scenarios";
 import {
@@ -11,7 +11,6 @@ import {
 } from "@/lib/gameState";
 
 import { TopBar } from "@/components/game/TopBar";
-
 import { EmailCard } from "@/components/game/EmailCard";
 import { ChoiceButtons } from "@/components/game/ChoiceButtons";
 import { ConfidenceSelector } from "@/components/game/ConfidenceSelector";
@@ -19,7 +18,6 @@ import { ResultReveal } from "@/components/game/ResultReveal";
 import { ScenarioCard } from "@/components/game/ScenarioCard";
 import { ScenarioOutcomeReveal } from "@/components/game/ScenarioOutcomeReveal";
 import { StatsSummary } from "@/components/game/StatsSummary";
-import { Bot, Eye, BookOpen, ArrowRight, Zap, Scale, Search } from "lucide-react";
 
 const PHASE1_ROUNDS = 5;
 const PHASE2_SCENARIOS = 3;
@@ -33,7 +31,6 @@ export default function Game() {
 
   const [choice, setChoice] = useState<EmailLabel | null>(null);
   const [confidence, setConfidence] = useState<ConfidenceLevel | null>(null);
-  const [scoreAnimating, setScoreAnimating] = useState(false);
   const [currentScenarioIndex, setCurrentScenarioIndex] = useState(0);
 
   const isPhase1Active = state.phase === "phase1";
@@ -49,9 +46,6 @@ export default function Game() {
     const isCorrect = choice === currentEmail.label;
     const pts = confidencePoints[confidence];
     const pointsChange = isCorrect ? pts : -pts;
-
-    setScoreAnimating(true);
-    setTimeout(() => setScoreAnimating(false), 500);
 
     setState((prev) => ({
       ...prev,
@@ -128,32 +122,19 @@ export default function Game() {
       {/* Landing */}
       {state.phase === "landing" && (
         <div className="flex-1 flex items-center justify-center px-6">
-          <div className="max-w-lg text-center space-y-8 animate-fade-in">
-            <div className="inline-flex items-center gap-2 rounded-full border bg-card px-4 py-1.5 text-xs text-muted-foreground">
-              <Bot className="w-3.5 h-3.5" />
-              Ethics Lab Simulation
-            </div>
+          <div className="max-w-lg text-center space-y-8">
             <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-              Spot the <span className="text-primary">Bot</span>: The AI Authorship Dilemma
+              Spot the Bot: The AI Authorship Dilemma
             </h1>
-            <p className="text-xl text-muted-foreground">Can you actually tell the difference?</p>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground">
               A classroom game about detecting AI writing and making fair ethical decisions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <button
-                onClick={() => setPhase("rules")}
-                className="rounded-lg bg-primary px-8 py-3.5 text-primary-foreground font-semibold hover:bg-primary/90 transition-colors animate-pulse-glow"
-              >
-                Start Game
-              </button>
-              <button
-                onClick={() => setPhase("rules")}
-                className="rounded-lg border border-border px-8 py-3.5 font-medium hover:bg-muted transition-colors"
-              >
-                How It Works
-              </button>
-            </div>
+            <button
+              onClick={() => setPhase("rules")}
+              className="rounded-lg bg-primary px-8 py-3.5 text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+            >
+              Start Game
+            </button>
           </div>
         </div>
       )}
@@ -161,55 +142,41 @@ export default function Game() {
       {/* Rules */}
       {state.phase === "rules" && (
         <div className="flex-1 flex items-center justify-center px-6">
-          <div className="max-w-xl space-y-8 animate-fade-in">
+          <div className="max-w-xl space-y-8">
             <h2 className="text-3xl font-bold text-center">How It Works</h2>
 
             <div className="space-y-4">
               {[
                 {
-                  icon: <Eye className="w-6 h-6" />,
-                  step: "Step 1",
+                  step: "1",
                   title: "Read the email",
                   desc: "You'll see a university-related email from students, professors, or staff.",
                 },
                 {
-                  icon: <Search className="w-6 h-6" />,
-                  step: "Step 2",
+                  step: "2",
                   title: "Classify the author",
                   desc: "Decide: was it written by a Human, AI, or Edited by AI?",
                 },
                 {
-                  icon: <Zap className="w-6 h-6" />,
-                  step: "Step 3",
+                  step: "3",
                   title: "Bet your confidence",
                   desc: "Risk more points for bigger rewards or play it safe.",
                 },
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className={`flex items-start gap-4 rounded-lg border bg-card p-5 animate-slide-up stagger-${i + 1}`}
-                >
-                  <div className="rounded-lg bg-primary/10 p-2.5 text-primary">{item.icon}</div>
-                  <div>
-                    <span className="text-xs text-primary font-medium uppercase tracking-wider">{item.step}</span>
-                    <h3 className="font-semibold mt-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
-                  </div>
+                <div key={i} className="rounded-lg border bg-card p-5">
+                  <span className="text-sm text-muted-foreground">Step {item.step}</span>
+                  <h3 className="font-semibold mt-1">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div className="rounded-lg border border-warning/30 bg-warning/5 p-5 animate-slide-up stagger-4">
-              <div className="flex items-start gap-3">
-                <Scale className="w-5 h-5 text-warning shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-warning">Phase 2: Ethical Consequences</h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    After the detection rounds, you'll face scenarios where misidentifying AI use has real consequences.
-                    Your decisions will be tested.
-                  </p>
-                </div>
-              </div>
+            <div className="rounded-lg border bg-card p-5">
+              <h3 className="font-semibold">Phase 2: Ethical Consequences</h3>
+              <p className="text-sm text-muted-foreground mt-1">
+                After the detection rounds, you'll face scenarios where misidentifying AI use has real consequences.
+                Your decisions will be tested.
+              </p>
             </div>
 
             <button
@@ -218,9 +185,9 @@ export default function Game() {
                 setConfidence(null);
                 setState((prev) => ({ ...prev, phase: "phase1", currentRound: 0 }));
               }}
-              className="w-full rounded-lg bg-primary px-6 py-3.5 text-primary-foreground font-semibold hover:bg-primary/90 transition-colors animate-slide-up stagger-5"
+              className="w-full rounded-lg bg-primary px-6 py-3.5 text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
             >
-              Start Phase 1 →
+              Start Phase 1
             </button>
           </div>
         </div>
@@ -234,7 +201,6 @@ export default function Game() {
             round={state.currentRound + 1}
             totalRounds={PHASE1_ROUNDS}
             score={state.score}
-            scoreAnimating={scoreAnimating}
           />
           <div className="flex-1 space-y-6 overflow-y-auto">
             <EmailCard context={currentEmail.context} text={currentEmail.text} />
@@ -269,17 +235,11 @@ export default function Game() {
       {/* Transition */}
       {state.phase === "transition" && (
         <div className="flex-1 flex items-center justify-center px-6">
-          <div className="max-w-lg text-center space-y-8 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-warning/10 border border-warning/20">
-              <Scale className="w-8 h-8 text-warning" />
-            </div>
+          <div className="max-w-lg text-center space-y-6">
             <h2 className="text-3xl font-bold">Phase 1 Complete</h2>
             <p className="text-muted-foreground leading-relaxed">
               You just experienced how difficult it is to detect AI writing.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Now imagine making decisions where{" "}
-              <span className="text-warning font-medium">accusations have real consequences</span>.
+              Now imagine making decisions where accusations have real consequences.
             </p>
             <button
               onClick={() => {
@@ -288,7 +248,7 @@ export default function Game() {
               }}
               className="rounded-lg bg-primary px-8 py-3.5 text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
             >
-              Start Ethical Scenarios →
+              Start Ethical Scenarios
             </button>
           </div>
         </div>
@@ -298,7 +258,7 @@ export default function Game() {
       {state.phase === "phase2" && currentScenario && (
         <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 py-8">
           <div className="flex items-center justify-between mb-6">
-            <span className="text-xs font-medium uppercase tracking-widest text-warning">Ethical Scenarios</span>
+            <span className="text-sm text-muted-foreground">Ethical Scenarios</span>
             <span className="text-sm text-muted-foreground">
               {currentScenarioIndex + 1}/{PHASE2_SCENARIOS}
             </span>
